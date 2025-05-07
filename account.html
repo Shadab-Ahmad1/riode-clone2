@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+
+    <title>Riode - Ultimate eCommerce Template</title>
+
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Riode - Ultimate eCommerce Template" />
+    <meta name="author" content="D-THEMES" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icons/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+      WebFontConfig = {
+        google: {
+          families: ["Poppins:400,500,600,700"],
+        },
+      };
+      (function (d) {
+        var wf = d.createElement("script"),
+          s = d.scripts[0];
+        wf.src = "js/webfont.js";
+        wf.async = true;
+        s.parentNode.insertBefore(wf, s);
+      })(document);
+    </script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/fontawesome-free/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/animate/animate.min.css"
+    />
+
+    <!-- Plugins CSS File -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/magnific-popup/magnific-popup.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/sticky-icon/stickyicon.css"
+    />
+
+    <!-- Main CSS File -->
+<<<<<<< HEAD
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.min.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ffc74e",
+              secondary: "#26303c",
+              dark: "#222",
+              body: "#666",
+              light: "#999",
+              grey: "#f5f5f5",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+=======
+    <link rel="stylesheet" type="text/css" href="css/output.css">
+>>>>>>> master
+    <style>
+      html {
+        font-size: 62.5%;
+        font-size-adjust: 100%;
+        font-weight: 400;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+      body {
+        margin: 0;
+        overflow-x: hidden;
+        font-family: Poppins, sans-serif;
+        font-size: 1.4rem;
+        line-height: 1.6;
+        color: #666;
+      }
+      .breadcrumb-nav::before,
+      .breadcrumb-nav::after {
+        box-sizing: inherit;
+      }
+      .nav-link.active {
+        color: #26c;
+      }
+      .tab-pane {
+        display: none;
+      }
+      .tab-pane.active {
+        display: block;
+      }
+      @media (max-width: 767px) {
+        .title {
+          font-size: 1.8rem !important;
+          margin-bottom: 1.5rem !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <main class="main account block relative bg-white">
+        <nav class="breadcrumb-nav py-[1.4rem]">
+          <div class="container max-w-[1220px] w-full px-5 mx-auto">
+            <ul
+              class="breadcrumb flex flex-wrap items-center text-[#666] font-[Poppins] text-[1.4rem] py-[1.4rem] space-x-2"
+            >
+              <li>
+                <a href="demo1.html"
+                  ><i
+                    class="fa-solid fa-house text-[#999] hover:text-[#222] transition-colors duration-200"
+                  ></i>
+                </a>
+              </li>
+              <li class="text-[1.6rem] font-semibold text-[#999]">&gt;</li>
+              <li>Account</li>
+            </ul>
+          </div>
+        </nav>
+        <div class="page-content mt-4 mb-10 pb-6">
+          <div class="container max-w-[1220px] w-full px-5 mx-auto">
+            <h2
+              class="title title-center w-full flex justify-center items-center text-center mx-auto mb-[6rem] capitalize text-[3rem] font-bold leading-[1] tracking-[-0.0125em] text-[#222]"
+            >
+              My Account
+            </h2>
+
+            <div class="tab tab-vertical gutter-lg flex flex-col md:flex-row">
+              <ul
+                class="nav nav-tabs mb-4 w-full md:w-[275px] flex-shrink-0"
+                role="tablist"
+              >
+                <li class="nav-item border-b border-[#eee] text-[#222] w-full">
+                  <a
+                    class="nav-link active block mb-[-0.1rem] pb-[1.6rem] px-[0.2rem] text-[1.6rem] font-bold leading-[1] tracking-normal rounded-none border-0 transition-all duration-[350ms]"
+                    href="#dashboard"
+                    data-tab="dashboard"
+                  >
+                    Dashboard
+                  </a>
+                </li>
+                <li class="nav-item border-b border-[#eee] text-[#222] w-full">
+                  <a
+                    class="nav-link block mb-[-0.1rem] py-[1.6rem] px-[0.2rem] text-[1.6rem] font-bold leading-[1] tracking-normal rounded-none border-0 transition-all duration-[350ms] hover:text-[#26c]"
+                    href="#orders"
+                    data-tab="orders"
+                  >
+                    Orders
+                  </a>
+                </li>
+                <li class="nav-item border-b border-[#eee] text-[#222] w-full">
+                  <a
+                    class="nav-link block mb-[-0.1rem] py-[1.6rem] px-[0.2rem] text-[1.6rem] font-bold leading-[1] tracking-normal rounded-none border-0 transition-all duration-[350ms] hover:text-[#26c]"
+                    href="#downloads"
+                    data-tab="downloads"
+                  >
+                    Downloads
+                  </a>
+                </li>
+                <li class="nav-item border-b border-[#eee] text-[#222] w-full">
+                  <a
+                    class="nav-link block mb-[-0.1rem] py-[1.6rem] px-[0.2rem] text-[1.6rem] font-bold leading-[1] tracking-normal rounded-none border-0 transition-all duration-[350ms] hover:text-[#26c]"
+                    href="#address"
+                    data-tab="address"
+                  >
+                    Address
+                  </a>
+                </li>
+                <li class="nav-item border-b border-[#eee] text-[#222] w-full">
+                  <a
+                    class="nav-link block mb-[-0.1rem] py-[1.6rem] px-[0.2rem] text-[1.6rem] font-bold leading-[1] tracking-normal rounded-none border-0 transition-all duration-[350ms] hover:text-[#26c]"
+                    href="#account"
+                    data-tab="account"
+                  >
+                    Account details
+                  </a>
+                </li>
+                <li class="nav-item border-b border-[#eee] text-[#222] w-full">
+                  <a
+                    class="nav-link block mb-[-0.1rem] py-[1.6rem] px-[0.2rem] text-[1.6rem] font-bold leading-[1] tracking-normal rounded-none border-0 transition-all duration-[350ms] hover:text-[#26c]"
+                    href="login.html"
+                  >
+                    Logout
+                  </a>
+                </li>
+              </ul>
+              <div
+                class="tab-content relative bg-transparent w-full md:w-[910px] md:pl-8 pl-0 mt-4 md:mt-0"
+              >
+                <!-- Dashboard Tab -->
+                <div class="tab-pane active" id="dashboard">
+                  <p class="mb-0 text-[15px] leading-[1.6]">
+                    Hello <span class="font-medium">User</span> (not
+                    <span class="font-medium">User</span>?
+                    <a href="#" class="text-[#26c] hover:underline">
+                      Log out
+                    </a>
+                    )
+                  </p>
+                  <p class="mb-10 text-[15px] leading-[30px]">
+                    From your account dashboard you can view your
+                    <a
+                      href="#orders"
+                      class="link-to-tab text-[#26c] underline"
+                      data-tab="orders"
+                    >
+                      recent orders, manage your shipping and billing addresses,
+                      <br class="hidden sm:block" />
+                      and edit your password and account details </a
+                    >.
+                  </p>
+                  <a
+                    href="shop.html"
+                    class="btn btn-dark btn-rounded inline-flex items-center justify-center border-2 border-[#222] bg-[#222] text-white outline-none py-[0.93em] px-[1.97em] font-bold text-[1.4rem] leading-[1.2] uppercase text-center whitespace-nowrap cursor-pointer transition-colors duration-300 ease-in-out rounded-[3px] hover:bg-[#3a3a3a]"
+                  >
+                    GO TO SHOP &nbsp;
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+                </div>
+
+                <!-- Orders Tab -->
+                <div class="tab-pane" id="orders">
+                  <div class="overflow-x-auto">
+                    <table
+                      class="order-table text-sm text-left bg-white border border-gray-200"
+                    >
+                      <thead>
+                        <tr class="bg-[#f4f4f4] text-gray-700 font-semibold">
+                          <th
+                            class="p-8 sm:pl-6 py-3 border-b border-gray-200 text-[1.6rem] font-semibold w-[11.4rem]"
+                          >
+                            Order
+                          </th>
+                          <th
+                            class="p-8 border-b border-gray-200 text-[1.6rem] font-semibold w-[24.8rem]"
+                          >
+                            Date
+                          </th>
+                          <th
+                            class="p-8 border-b border-gray-200 text-[1.6rem] font-semibold w-[14.7rem]"
+                          >
+                            Status
+                          </th>
+                          <th
+                            class="p-8 border-b border-gray-200 text-[1.6rem] font-semibold w-[25.9rem]"
+                          >
+                            Total
+                          </th>
+                          <th
+                            class="p-8 sm:pr-6 py-3 border-b border-gray-200 text-right text-[1.6rem] font-semibold"
+                          >
+                            Actions
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody class="text-gray-800">
+                        <tr class="border-b border-gray-200">
+                          <td
+                            class="order-number sm:p-8 font-medium text-[1.4rem] hover:text-[#26c]"
+                          >
+                            <a href="">#3596</a>
+                          </td>
+                          <td
+                            class="order-date sm:p-8 text-[#666] text-[1.4rem]"
+                          >
+                            February 24, 2021
+                          </td>
+                          <td class="order-status sm:p-8">
+                            <span
+                              class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-[1.4rem]"
+                              >On hold</span
+                            >
+                          </td>
+                          <td
+                            class="order-total sm:p-8 text-gray-600 text-[1.4rem]"
+                          >
+                            $900.00 for 5 items
+                          </td>
+                          <td class="order-action sm:p-8 text-right">
+                            <a
+                              href="#"
+                              class="btn btn-primary btn-link btn-underline text-[#26c] font-semibold relative inline-block after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#26c] after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 text-[1.4rem] pb-1"
+                            >
+                              VIEW
+                            </a>
+                          </td>
+                        </tr>
+                        <tr class="border-b border-gray-200 bg-[#f4f4f4]">
+                          <td
+                            class="order-number sm:p-8 font-medium text-[1.4rem] hover:text-[#26c]"
+                          >
+                            <a href="">#3596</a>
+                          </td>
+                          <td
+                            class="order-date sm:p-8 text-[#666] text-[1.4rem]"
+                          >
+                            February 24, 2021
+                          </td>
+                          <td class="order-status sm:p-8">
+                            <span
+                              class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-[1.4rem]"
+                              >On hold</span
+                            >
+                          </td>
+                          <td
+                            class="order-total sm:p-8 text-gray-600 text-[1.4rem]"
+                          >
+                            $900.00 for 5 items
+                          </td>
+                          <td class="order-action sm:p-8 text-right">
+                            <a
+                              href="#"
+                              class="btn btn-primary btn-link btn-underline text-[#26c] font-semibold relative inline-block after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#26c] after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 text-[1.4rem] pb-1"
+                            >
+                              VIEW
+                            </a>
+                          </td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                          <td
+                            class="order-number sm:p-8 font-medium text-[1.4rem] hover:text-[#26c]"
+                          >
+                            <a href="">#3596</a>
+                          </td>
+                          <td
+                            class="order-date sm:p-8 text-[#666] text-[1.4rem]"
+                          >
+                            February 24, 2021
+                          </td>
+                          <td class="order-status sm:p-8">
+                            <span
+                              class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-[1.4rem]"
+                              >On hold</span
+                            >
+                          </td>
+                          <td
+                            class="order-total sm:p-8 text-gray-600 text-[1.4rem]"
+                          >
+                            $900.00 for 5 items
+                          </td>
+                          <td class="order-action sm:p-8 text-right">
+                            <a
+                              href="#"
+                              class="btn btn-primary btn-link btn-underline text-[#26c] font-semibold relative inline-block after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#26c] after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 text-[1.4rem] pb-1"
+                            >
+                              VIEW
+                            </a>
+                          </td>
+                        </tr>
+                        <tr class="border-b border-gray-200 bg-[#f4f4f4]">
+                          <td
+                            class="order-number sm:p-8 font-medium text-[1.4rem] hover:text-[#26c]"
+                          >
+                            <a href="">#3596</a>
+                          </td>
+                          <td
+                            class="order-date sm:p-8 text-[#666] text-[1.4rem]"
+                          >
+                            February 24, 2021
+                          </td>
+                          <td class="order-status sm:p-8">
+                            <span
+                              class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-[1.4rem]"
+                              >On hold</span
+                            >
+                          </td>
+                          <td
+                            class="order-total sm:p-8 text-gray-600 text-[1.4rem]"
+                          >
+                            $900.00 for 5 items
+                          </td>
+                          <td class="order-action sm:p-8 text-right">
+                            <a
+                              href="#"
+                              class="btn btn-primary btn-link btn-underline text-[#26c] font-semibold relative inline-block after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#26c] after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 text-[1.4rem] pb-1"
+                            >
+                              VIEW
+                            </a>
+                          </td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                          <td
+                            class="order-number sm:p-8 font-medium text-[1.4rem] hover:text-[#26c]"
+                          >
+                            <a href="">#3596</a>
+                          </td>
+                          <td
+                            class="order-date sm:p-8 text-[#666] text-[1.4rem]"
+                          >
+                            February 24, 2021
+                          </td>
+                          <td class="order-status sm:p-8">
+                            <span
+                              class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-[1.4rem]"
+                              >On hold</span
+                            >
+                          </td>
+                          <td
+                            class="order-total sm:p-8 text-gray-600 text-[1.4rem]"
+                          >
+                            $900.00 for 5 items
+                          </td>
+                          <td class="order-action sm:p-8 text-right">
+                            <a
+                              href="#"
+                              class="btn btn-primary btn-link btn-underline text-[#26c] font-semibold relative inline-block after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#26c] after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 text-[1.4rem] pb-1"
+                            >
+                              VIEW
+                            </a>
+                          </td>
+                        </tr>
+                        <tr class="border-b border-gray-200 bg-[#f4f4f4]">
+                          <td
+                            class="order-number sm:p-8 font-medium text-[1.4rem] hover:text-[#26c]"
+                          >
+                            <a href="">#3596</a>
+                          </td>
+                          <td
+                            class="order-date sm:p-8 text-[#666] text-[1.4rem]"
+                          >
+                            February 24, 2021
+                          </td>
+                          <td class="order-status sm:p-8">
+                            <span
+                              class="bg-gray-200 text-gray-800 px-2 py-1 rounded text-[1.4rem]"
+                              >On hold</span
+                            >
+                          </td>
+                          <td
+                            class="order-total sm:p-8 text-gray-600 text-[1.4rem]"
+                          >
+                            $900.00 for 5 items
+                          </td>
+                          <td class="order-action sm:p-8 text-right">
+                            <a
+                              href="#"
+                              class="btn btn-primary btn-link btn-underline text-[#26c] font-semibold relative inline-block after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#26c] after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0 text-[1.4rem] pb-1"
+                            >
+                              VIEW
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <!-- Downloads Tab -->
+                <div class="tab-pane" id="downloads">
+                  <p class="mb-4 text-[15px] leading-[1.6] text-[#666]">
+                    No downloads available yet.
+                  </p>
+
+                  <a
+                    href="#"
+                    class="btn btn-primary btn-link btn-underline text-[#26c] font-semibold text-[1.4rem] pb-1 relative inline-flex items-center after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:h-[2px] after:w-0 after:bg-[#26c] after:transition-all after:duration-300 after:ease-in-out hover:after:w-full hover:after:left-0"
+                  >
+                    BROWSER PRODUCTS
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="ml-1 w-4 h-4"
+                    >
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+
+                <!-- Address Tab -->
+                <div class="tab-pane" id="address">
+                  <p class="mb-6 text-[15px] leading-[1.6] p-[1.5rem]">
+                    The following addresses will be used on the checkout page by
+                    default.
+                  </p>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="mb-4">
+                      <div class="card card-address rounded-md p-6 bg-white">
+                        <div class="card-body">
+                          <h5
+                            class="card-title text-uppercase font-bold text-[15px] mb-4 uppercase"
+                          >
+                            BILLING ADDRESS
+                          </h5>
+                          <p
+                            class="mb-4 text-[15px] leading-[1.6] text-gray-700"
+                          >
+                            John Doe
+                            <br />
+                            Riode Company <br />
+                            Steven street <br />
+                            El Carjon, CA 92020
+                          </p>
+                          <a
+                            href="#"
+                            class="btn btn-link btn-secondary btn-underline text-[#d26e4b] font-medium inline-flex items-center relative after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:h-[1px] after:w-0 after:bg-[#d26e4b] after:transition-all after:duration-500 after:ease-in-out hover:after:w-full hover:after:left-0"
+                          >
+                            EDIT&nbsp;
+                            <i
+                              class="fa-solid fa-pen-to-square ml-1"
+                              style="color: #d26e4b"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-4">
+                      <div class="card card-address rounded-md p-6 bg-white">
+                        <div class="card-body">
+                          <h5
+                            class="card-title text-uppercase font-bold text-[15px] mb-4 uppercase"
+                          >
+                            SHIPPING ADDRESS
+                          </h5>
+                          <p
+                            class="mb-4 text-[15px] leading-[1.6] text-gray-700"
+                          >
+                            You have not set up this type of address yet.
+                          </p>
+                          <a
+                            href="#"
+                            class="btn btn-link btn-secondary btn-underline text-[#d26e4b] font-medium inline-flex items-center relative after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:h-[1px] after:w-0 after:bg-[#d26e4b] after:transition-all after:duration-500 after:ease-in-out hover:after:w-full hover:after:left-0"
+                          >
+                            EDIT&nbsp;
+                            <i
+                              class="fa-solid fa-pen-to-square ml-1"
+                              style="color: #d26e4b"
+                            ></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Account Tab -->
+                <div class="tab-pane" id="account">
+                  <form action="#" class="form">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                      <div>
+                        <label
+                          class="block pl-[0.2rem] mb-4 text-[1.4rem] leading-[1] text-[#666]"
+                          >First Name *</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control block w-full min-h-[4.5rem] px-[2rem] py-[0.85rem] border border-[#e3e3e3] text-[1.4rem] leading-[1.5] font-normal text-[#666] bg-transparent rounded-none shadow-none outline-none focus:border-black transition-colors duration-200"
+                          name="first_name"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <label
+                          class="block pl-[0.2rem] mb-4 text-[1.4rem] leading-[1] text-[#666]"
+                          >Last Name *</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control block w-full min-h-[4.5rem] px-[2rem] py-[0.85rem] border border-[#e3e3e3] text-[1.4rem] leading-[1.5] font-normal text-[#666] bg-transparent rounded-none shadow-none outline-none focus:border-black transition-colors duration-200"
+                          name="last_name"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div class="mb-6">
+                      <label
+                        class="block pl-[0.2rem] mb-4 text-[1.4rem] leading-[1] text-[#666]"
+                        >Display Name *</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control block w-full min-h-[4.5rem] px-[2rem] py-[0.85rem] border border-[#e3e3e3] text-[1.4rem] leading-[1.5] font-normal text-[#666] bg-transparent rounded-none shadow-none outline-none focus:border-black transition-colors duration-200"
+                        name="display_name"
+                        required
+                      />
+                      <small
+                        class="d-block form-text block pl-[0.2rem] mt-1 text-[1rem] leading-[1] text-[#666]"
+                      >
+                        This will be how your name will be displayed in the
+                        account section and in reviews
+                      </small>
+                    </div>
+
+                    <div class="mb-6">
+                      <label
+                        class="block pl-[0.2rem] mb-4 text-[1.4rem] leading-[1] text-[#666]"
+                        >Email Address *</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control block w-full min-h-[4.5rem] px-[2rem] py-[0.85rem] border border-[#e3e3e3] text-[1.4rem] leading-[1.5] font-normal text-[#666] bg-transparent rounded-none shadow-none outline-none focus:border-black transition-colors duration-200"
+                        name="email"
+                        required
+                      />
+                    </div>
+
+                    <fieldset
+                      class="border border-gray-200 rounded-md p-4 sm:p-6 mb-6"
+                    >
+                      <legend
+                        class="block pl-[0.2rem] mb-4 text-[1.4rem] leading-[1] text-[#222]"
+                      >
+                        Password Change
+                      </legend>
+                      <div class="mb-4">
+                        <label
+                          class="block pl-[0.2rem] mb-4 text-[1.4rem] leading-[1] text-[#666]"
+                        >
+                          Current password (leave blank to leave unchanged)
+                        </label>
+
+                        <input
+                          type="password"
+                          class="form-control block w-full min-h-[4.5rem] px-[2rem] py-[0.85rem] border border-[#e3e3e3] text-[1.4rem] leading-[1.5] font-normal text-[#666] bg-transparent rounded-none shadow-none outline-none focus:border-black transition-colors duration-200"
+                          name="current_password"
+                          required
+                        />
+                      </div>
+
+                      <div class="mb-4">
+                        <label class="block mb-2 text-[15px] font-medium">
+                          New password (leave blank to leave unchanged)
+                        </label>
+
+                        <input
+                          type="password"
+                          class="form-control block w-full min-h-[4.5rem] px-[2rem] py-[0.85rem] border border-[#e3e3e3] text-[1.4rem] leading-[1.5] font-normal text-[#666] bg-transparent rounded-none shadow-none outline-none focus:border-black transition-colors duration-200"
+                          name="new_password"
+                          required
+                        />
+                      </div>
+
+                      <div class="mb-4">
+                        <label
+                          class="block pl-[0.2rem] mb-4 text-[1.4rem] leading-[1] text-[#666]"
+                          >Confirm new password</label
+                        >
+
+                        <input
+                          type="password"
+                          class="form-control block w-full min-h-[4.5rem] px-[2rem] py-[0.85rem] border border-[#e3e3e3] text-[1.4rem] leading-[1.5] font-normal text-[#666] bg-transparent rounded-none shadow-none outline-none focus:border-black transition-colors duration-200"
+                          name="confirm_password"
+                          required
+                        />
+                      </div>
+                    </fieldset>
+
+                    <button
+                      type="submit"
+                      class="btn btn-primary bg-[#0088cc] hover:bg-[#006da3] text-white font-bold py-3 px-6 rounded-md transition-colors duration-300 ease-in-out"
+                    >
+                      SAVE CHANGES
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+<<<<<<< HEAD
+      <!-- End Main -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-top">
+            <div class="row align-items-center">
+              <div class="col-lg-3">
+                <a href="demo1.html" class="logo-footer">
+                  <img
+                    src="images/logo-footer.png"
+                    alt="logo-footer"
+                    width="154"
+                    height="43"
+                  />
+                </a>
+                <!-- End FooterLogo -->
+              </div>
+              <div class="col-lg-9">
+                <div
+                  class="widget widget-newsletter form-wrapper form-wrapper-inline"
+                >
+                  <div class="newsletter-info mx-auto mr-lg-2 ml-lg-4">
+                    <h4 class="widget-title">Subscribe to our Newsletter</h4>
+                    <p>Get all the latest information, Sales and Offers.</p>
+                  </div>
+                  <form action="#" class="input-wrapper input-wrapper-inline">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Email address here..."
+                      required
+                    />
+                    <button
+                      class="btn btn-primary btn-rounded btn-md ml-2"
+                      type="submit"
+                    >
+                      subscribe<i class="d-icon-arrow-right"></i>
+                    </button>
+                  </form>
+                </div>
+                <!-- End Newsletter -->
+              </div>
+            </div>
+          </div>
+          <!-- End FooterTop -->
+          <div class="footer-middle">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="widget widget-info">
+                  <h4 class="widget-title">Contact Info</h4>
+                  <ul class="widget-body">
+                    <li>
+                      <label>Phone:</label>
+                      <a href="tel:#">Toll Free (123) 456-7890</a>
+                    </li>
+                    <li>
+                      <label>Email:</label>
+                      <a
+                        href="/cdn-cgi/l/email-protection#422f232b2e02302b2d26276c212d2f"
+                        ><span
+                          class="__cf_email__"
+                          data-cfemail="c6aba7afaa86b4afa9a2a3e8a5a9ab"
+                          >[email&#160;protected]</span
+                        ></a
+                      >
+                    </li>
+                    <li>
+                      <label>Address:</label>
+                      <a href="#">123 Street Name, City, England</a>
+                    </li>
+                    <li>
+                      <label>WORKING DAYS / HOURS:</label>
+                    </li>
+                    <li>
+                      <a href="#">Mon - Sun / 9:00 AM - 8:00 PM</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- End Widget -->
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="widget ml-lg-4">
+                  <h4 class="widget-title">My Account</h4>
+                  <ul class="widget-body">
+                    <li>
+                      <a href="about-us.html">About Us</a>
+                    </li>
+                    <li>
+                      <a href="#">Order History</a>
+                    </li>
+                    <li>
+                      <a href="#">Returns</a>
+                    </li>
+                    <li>
+                      <a href="#">Custom Service</a>
+                    </li>
+                    <li>
+                      <a href="#">Terms &amp; Condition</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- End Widget -->
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="widget ml-lg-4">
+                  <h4 class="widget-title">Contact Info</h4>
+                  <ul class="widget-body">
+                    <li>
+                      <a href="#">Sign in</a>
+                    </li>
+                    <li>
+                      <a href="cart.html">View Cart</a>
+                    </li>
+                    <li>
+                      <a href="wishlist.html">My Wishlist</a>
+                    </li>
+                    <li>
+                      <a href="#">Track My Order</a>
+                    </li>
+                    <li>
+                      <a href="#">Help</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- End Widget -->
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="widget widget-instagram">
+                  <h4 class="widget-title">Instagram</h4>
+                  <figure class="widget-body row">
+                    <div class="col-3">
+                      <img
+                        src="images/instagram/01.jpg"
+                        alt="instagram 1"
+                        width="64"
+                        height="64"
+                      />
+                    </div>
+                    <div class="col-3">
+                      <img
+                        src="images/instagram/02.jpg"
+                        alt="instagram 2"
+                        width="64"
+                        height="64"
+                      />
+                    </div>
+                    <div class="col-3">
+                      <img
+                        src="images/instagram/03.jpg"
+                        alt="instagram 3"
+                        width="64"
+                        height="64"
+                      />
+                    </div>
+                    <div class="col-3">
+                      <img
+                        src="images/instagram/04.jpg"
+                        alt="instagram 4"
+                        width="64"
+                        height="64"
+                      />
+                    </div>
+                    <div class="col-3">
+                      <img
+                        src="images/instagram/05.jpg"
+                        alt="instagram 5"
+                        width="64"
+                        height="64"
+                      />
+                    </div>
+                    <div class="col-3">
+                      <img
+                        src="images/instagram/06.jpg"
+                        alt="instagram 6"
+                        width="64"
+                        height="64"
+                      />
+                    </div>
+                    <div class="col-3">
+                      <img
+                        src="images/instagram/07.jpg"
+                        alt="instagram 7"
+                        width="64"
+                        height="64"
+                      />
+                    </div>
+                    <div class="col-3">
+                      <img
+                        src="images/instagram/08.jpg"
+                        alt="instagram 8"
+                        width="64"
+                        height="64"
+                      />
+                    </div>
+                  </figure>
+                </div>
+                <!-- End Instagram -->
+              </div>
+            </div>
+          </div>
+          <!-- End FooterMiddle -->
+          <div class="footer-bottom">
+            <div class="footer-left">
+              <figure class="payment">
+                <img
+                  src="images/payment.png"
+                  alt="payment"
+                  width="159"
+                  height="29"
+                />
+              </figure>
+            </div>
+            <div class="footer-center">
+              <p class="copyright">
+                Riode eCommerce &copy; 2021. All Rights Reserved
+              </p>
+            </div>
+            <div class="footer-right">
+              <div class="social-links">
+                <a
+                  href="#"
+                  class="social-link social-facebook fab fa-facebook-f"
+                ></a>
+                <a
+                  href="#"
+                  class="social-link social-twitter fab fa-twitter"
+                ></a>
+                <a
+                  href="#"
+                  class="social-link social-linkedin fab fa-linkedin-in"
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- End FooterBottom -->
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </div>
+    <!-- Sticky Footer -->
+    <div class="sticky-footer sticky-content fix-bottom">
+      <a href="demo1.html" class="sticky-link">
+        <i class="d-icon-home"></i>
+        <span>Home</span>
+      </a>
+      <a href="shop.html" class="sticky-link">
+        <i class="d-icon-volume"></i>
+        <span>Categories</span>
+      </a>
+      <a href="wishlist.html" class="sticky-link">
+        <i class="d-icon-heart"></i>
+        <span>Wishlist</span>
+      </a>
+      <a href="account.html" class="sticky-link">
+        <i class="d-icon-user"></i>
+        <span>Account</span>
+      </a>
+      <div class="header-search hs-toggle dir-up">
+        <a href="#" class="search-toggle sticky-link">
+          <i class="d-icon-search"></i>
+          <span>Search</span>
+        </a>
+        <form action="#" class="input-wrapper">
+          <input
+            type="text"
+            class="form-control"
+            name="search"
+            autocomplete="off"
+            placeholder="Search your keyword..."
+            required
+          />
+          <button class="btn btn-search" type="submit">
+            <i class="d-icon-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- Scroll Top -->
+    <a id="scroll-top" href="#top" title="Top" role="button" class="scroll-top"
+      ><i class="d-icon-arrow-up"></i
+    ></a>
+
+    <!-- MobileMenu -->
+    <div class="mobile-menu-wrapper">
+      <div class="mobile-menu-overlay"></div>
+      <!-- End Overlay -->
+      <a class="mobile-menu-close" href="#"><i class="d-icon-times"></i></a>
+      <!-- End CloseButton -->
+      <div class="mobile-menu-container scrollable">
+        <form action="#" class="input-wrapper">
+          <input
+            type="text"
+            class="form-control"
+            name="search"
+            autocomplete="off"
+            placeholder="Search your keyword..."
+            required
+          />
+          <button class="btn btn-search" type="submit">
+            <i class="d-icon-search"></i>
+          </button>
+        </form>
+        <!-- End Search Form -->
+        <ul class="mobile-menu mmenu-anim">
+          <li>
+            <a href="demo1.html">Home</a>
+          </li>
+          <li>
+            <a href="shop.html" class="active">Categories</a>
+            <ul>
+              <li>
+                <a href="#"> Variations 1 </a>
+                <ul>
+                  <li><a href="shop-classic-filter.html">Classic Filter</a></li>
+                  <li>
+                    <a href="shop-left-toggle-sidebar.html"
+                      >Left Toggle Filter</a
+                    >
+                  </li>
+                  <li>
+                    <a href="shop-right-toggle-sidebar.html"
+                      >Right Toggle Sidebar</a
+                    >
+                  </li>
+                  <li>
+                    <a href="shop-horizontal-filter.html">Horizontal Filter </a>
+                  </li>
+                  <li>
+                    <a href="shop-navigation-filter.html">Navigation Filter</a>
+                  </li>
+
+                  <li>
+                    <a href="shop-off-canvas-filter.html">Off-Canvas Filter </a>
+                  </li>
+                  <li><a href="shop-top-banner.html">Top Banner</a></li>
+                  <li>
+                    <a href="shop-inner-top-banner.html">Inner Top Banner</a>
+                  </li>
+                  <li>
+                    <a href="shop-with-bottom-block.html">With Bottom Block</a>
+                  </li>
+                  <li>
+                    <a href="shop-category-in-page-header.html"
+                      >Category In Page Header</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"> Variations 2 </a>
+                <ul>
+                  <li><a href="shop-grid-3cols.html">3 Columns Mode</a></li>
+                  <li><a href="shop-grid-4cols.html">4 Columns Mode</a></li>
+                  <li><a href="shop-grid-5cols.html">5 Columns Mode</a></li>
+                  <li><a href="shop-grid-6cols.html">6 Columns Mode</a></li>
+                  <li><a href="shop-grid-7cols.html">7 Columns Mode</a></li>
+                  <li><a href="shop-grid-8cols.html">8 Columns Mode</a></li>
+                  <li><a href="shop-list-mode.html">List Mode</a></li>
+                  <li><a href="shop-pagination.html">Pagination</a></li>
+                  <li>
+                    <a href="shop-infinite-ajaxscroll.html"
+                      >Infinite Ajaxscroll
+                    </a>
+                  </li>
+                  <li>
+                    <a href="shop-loadmore-button.html">Loadmore Button</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"> Variations 3 </a>
+                <ul>
+                  <li>
+                    <a href="shop-category-grid-shop.html"
+                      >Category Grid Shop</a
+                    >
+                  </li>
+                  <li>
+                    <a href="shop-category+products.html"
+                      >Category + Products</a
+                    >
+                  </li>
+                  <li><a href="shop-default-1.html">Shop Default 1 </a></li>
+                  <li><a href="shop-default-2.html">Shop Default 2</a></li>
+                  <li><a href="shop-default-3.html">Shop Default 3</a></li>
+                  <li><a href="shop-default-4.html">Shop Default 4</a></li>
+                  <li><a href="shop-default-5.html">Shop Default 5</a></li>
+                  <li><a href="shop-default-6.html">Shop Default 6</a></li>
+                  <li><a href="shop-default-7.html">Shop Default 7</a></li>
+                  <li><a href="shop-default-8.html">Shop Default 8</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="product.html">Products</a>
+            <ul>
+              <li>
+                <a href="#">Product Pages</a>
+                <ul>
+                  <li><a href="product-simple.html">Simple Product</a></li>
+                  <li>
+                    <a href="product-featured.html">Featured &amp; On Sale</a>
+                  </li>
+                  <li><a href="product.html">Variable Product</a></li>
+                  <li>
+                    <a href="product-variable-swatch.html"
+                      >Variation Swatch Product</a
+                    >
+                  </li>
+                  <li><a href="product-grouped.html">Grouped Product </a></li>
+                  <li><a href="product-external.html">External Product</a></li>
+                  <li><a href="product-in-stock.html">In Stock Product</a></li>
+                  <li>
+                    <a href="product-out-stock.html">Out of Stock Product</a>
+                  </li>
+                  <li><a href="product-upsell.html">Upsell Products</a></li>
+                  <li>
+                    <a href="product-cross-sell.html">Cross Sell Products</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Product Layouts</a>
+                <ul>
+                  <li><a href="product-vertical.html">Vertical Thumb</a></li>
+                  <li>
+                    <a href="product-horizontal.html">Horizontal Thumb</a>
+                  </li>
+                  <li><a href="product-gallery.html">Gallery Type</a></li>
+                  <li><a href="product-grid.html">Grid Images</a></li>
+                  <li><a href="product-masonry.html">Masonry Images</a></li>
+                  <li><a href="product-sticky.html">Sticky Info</a></li>
+                  <li>
+                    <a href="product-sticky-both.html">Left & Right Sticky</a>
+                  </li>
+                  <li>
+                    <a href="product-left-sidebar.html">With Left Sidebar</a>
+                  </li>
+                  <li>
+                    <a href="product-right-sidebar.html">With Right Sidebar</a>
+                  </li>
+                  <li><a href="product-full.html">Full Width Layout </a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Product Features</a>
+                <ul>
+                  <li><a href="product-sale.html">Sale Countdown</a></li>
+                  <li>
+                    <a href="product-hurryup.html">Hurry Up Notification </a>
+                  </li>
+                  <li>
+                    <a href="product-attribute-guide.html">Attribute Guide </a>
+                  </li>
+                  <li>
+                    <a href="product-sticky-cart.html">Add Cart Sticky</a>
+                  </li>
+                  <li>
+                    <a href="product-thumbnail-label.html"
+                      >Labels on Thumbnail</a
+                    >
+                  </li>
+                  <li>
+                    <a href="product-more-description.html"
+                      >More Description Tabs</a
+                    >
+                  </li>
+                  <li>
+                    <a href="product-accordion-data.html">Data In Accordion</a>
+                  </li>
+                  <li><a href="product-tabinside.html">Data Inside</a></li>
+                  <li><a href="product-video.html">Video Thumbnail </a></li>
+                  <li>
+                    <a href="product-360-degree.html">360 Degree Thumbnail </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Pages</a>
+            <ul>
+              <li><a href="about-us.html">About</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="account.html">Login</a></li>
+              <li><a href="faq.html">FAQs</a></li>
+              <li>
+                <a href="error-404.html">Error 404</a>
+                <ul>
+                  <li><a href="error-404.html">Error 404-1</a></li>
+                  <li><a href="error-404-1.html">Error 404-2</a></li>
+                  <li><a href="error-404-2.html">Error 404-3</a></li>
+                  <li><a href="error-404-3.html">Error 404-4</a></li>
+                </ul>
+              </li>
+              <li><a href="coming-soon.html">Coming Soon</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="blog-classic.html">Blog</a>
+            <ul>
+              <li><a href="blog-classic.html">Classic</a></li>
+              <li><a href="blog-listing.html">Listing</a></li>
+              <li>
+                <a href="#">Grid</a>
+                <ul>
+                  <li><a href="blog-grid-2col.html">Grid 2 columns</a></li>
+                  <li><a href="blog-grid-3col.html">Grid 3 columns</a></li>
+                  <li><a href="blog-grid-4col.html">Grid 4 columns</a></li>
+                  <li><a href="blog-grid-sidebar.html">Grid sidebar</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Masonry</a>
+                <ul>
+                  <li>
+                    <a href="blog-masonry-2col.html">Masonry 2 columns</a>
+                  </li>
+                  <li>
+                    <a href="blog-masonry-3col.html">Masonry 3 columns</a>
+                  </li>
+                  <li>
+                    <a href="blog-masonry-4col.html">Masonry 4 columns</a>
+                  </li>
+                  <li>
+                    <a href="blog-masonry-sidebar.html">Masonry sidebar</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Mask</a>
+                <ul>
+                  <li><a href="blog-mask-grid.html">Blog mask grid</a></li>
+                  <li>
+                    <a href="blog-mask-masonry.html">Blog mask masonry</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="post-single.html">Single Post</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="element.html">Elements</a>
+            <ul>
+              <li>
+                <a href="#">Elements 1</a>
+                <ul>
+                  <li><a href="element-accordions.html">Accordions</a></li>
+                  <li>
+                    <a href="element-alerts.html">Alert &amp; Notification</a>
+                  </li>
+
+                  <li>
+                    <a href="element-banner-effect.html">Banner Effect </a>
+                  </li>
+                  <li><a href="element-banner.html">Banner </a></li>
+                  <li><a href="element-blog-posts.html">Blog Posts</a></li>
+                  <li><a href="element-breadcrumb.html">Breadcrumb </a></li>
+                  <li><a href="element-buttons.html">Buttons</a></li>
+                  <li><a href="element-cta.html">Call to Action</a></li>
+                  <li><a href="element-countdown.html">Countdown </a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Elements 2</a>
+                <ul>
+                  <li><a href="element-counter.html">Counter </a></li>
+                  <li>
+                    <a href="element-creative-grid.html">Creative Grid </a>
+                  </li>
+                  <li><a href="element-animation.html">Entrance Effect </a></li>
+                  <li><a href="element-floating.html">Floating </a></li>
+                  <li><a href="element-hotspot.html">Hotspot </a></li>
+                  <li><a href="element-icon-boxes.html">Icon Boxes</a></li>
+                  <li><a href="element-icons.html">Icons</a></li>
+                  <li><a href="element-image-box.html">Image box </a></li>
+                  <li><a href="element-instagrams.html">Instagrams</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Elements 3</a>
+                <ul>
+                  <li>
+                    <a href="element-categories.html">Product Category</a>
+                  </li>
+                  <li><a href="element-products.html">Products</a></li>
+                  <li>
+                    <a href="element-product-banner.html">Products + Banner </a>
+                  </li>
+                  <li>
+                    <a href="element-product-grid.html">Products + Grid </a>
+                  </li>
+                  <li>
+                    <a href="element-product-single.html">Product Single </a>
+                  </li>
+                  <li>
+                    <a href="element-product-tab.html">Products + Tab </a>
+                  </li>
+                  <li>
+                    <a href="element-single-product.html">Single Product </a>
+                  </li>
+                  <li><a href="element-slider.html">Slider </a></li>
+                  <li><a href="element-social-link.html">Social Icons </a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Elements 4</a>
+                <ul>
+                  <li><a href="element-subcategory.html">Subcategory </a></li>
+                  <li><a href="element-svg-floating.html">Svg Floating </a></li>
+                  <li><a href="element-tabs.html">Tabs</a></li>
+                  <li><a href="element-testimonials.html">Testimonials </a></li>
+                  <li><a href="element-titles.html">Title</a></li>
+                  <li><a href="element-typography.html">Typography</a></li>
+                  <li><a href="element-vendor.html">Vendor </a></li>
+                  <li><a href="element-video.html">Video </a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://d-themes.com/buynow/riodehtml">Buy Riode!</a>
+          </li>
+        </ul>
+        <!-- End MobileMenu -->
+      </div>
+    </div>
+    <!-- sticky icons-->
+    <div class="sticky-icons-wrapper">
+      <div class="sticky-icon-links">
+        <ul>
+          <li>
+            <a href="#" class="demo-toggle"
+              ><i class="fas fa-home"></i><span>Demos</span></a
+            >
+          </li>
+          <li>
+            <a href="documentation.html"
+              ><i class="fas fa-info-circle"></i><span>Documentation</span></a
+            >
+          </li>
+          <li>
+            <a href="https://themeforest.net/downloads/"
+              ><i class="fas fa-star"></i><span>Reviews</span></a
+            >
+          </li>
+          <li>
+            <a href="https://d-themes.com/buynow/riodehtml"
+              ><i class="fas fa-shopping-cart"></i><span>Buy now!</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="demos-list">
+        <div class="demos-overlay"></div>
+        <a class="demos-close" href="#"><i class="close-icon"></i></a>
+        <div class="demos-content scrollable scrollable-light">
+          <h3 class="demos-title">Demos</h3>
+          <div class="demos"></div>
+        </div>
+      </div>
+    </div>
+=======
+ 
+>>>>>>> master
+    <!-- Plugins JS File -->
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/elevatezoom/jquery.elevatezoom.min.js"></script>
+    <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Main JS File -->
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

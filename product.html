@@ -1,0 +1,1660 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+
+    <title>Riode - Ultimate eCommerce Template</title>
+
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Riode - Ultimate eCommerce Template" />
+    <meta name="author" content="SW-THEMES" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icons/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+<<<<<<< HEAD
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ffc74e",
+              secondary: "#26303c",
+              dark: "#222",
+              body: "#666",
+              light: "#999",
+              grey: "#f5f5f5",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+=======
+    <link rel="stylesheet" type="text/css" href="css/output.css">
+>>>>>>> master
+    <style>
+      html {
+        font-size: 62.5%;
+        font-size-adjust: 100%;
+        font-weight: 400;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+      body {
+        margin: 0;
+        overflow-x: hidden;
+        font-family: Poppins, sans-serif;
+        font-size: 1.4rem;
+        line-height: 1.6;
+        color: #666;
+      }
+      .product-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+        position: sticky;
+      }
+      .product-single-carousel,
+      .product-thumbs-wrap {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+      .product-thumbs-wrap {
+        position: relative;
+        margin-top: 1rem;
+        overflow: hidden;
+      }
+      .product-thumb.active:before {
+        border-color: #26c;
+      }
+      .product-thumb:before {
+        content: "";
+        transition: border-color 0.3s;
+        border: 2px solid transparent;
+      }
+      .product-thumb:before,
+      .product-thumbs-wrap button {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+      }
+      .product-thumbs-wrap:hover button:not(.disabled) {
+        opacity: 0.9;
+        transform: none;
+      }
+      @media (min-width: 992px) {
+        .pg-vertical .product-thumbs-wrap {
+          order: -1;
+          max-width: 109px;
+          margin: 0 1rem 0 0;
+        }
+        .pg-vertical .product-single-carousel {
+          max-width: calc(100% - 119px);
+        }
+        .pg-vertical .product-thumbs {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+        .pg-vertical .product-thumb {
+          margin: 0 0 1rem;
+        }
+        .pg-vertical .thumb-down,
+        .pg-vertical .thumb-up {
+          display: flex;
+          width: 100%;
+          height: 2.4rem;
+        }
+        .pg-vertical .thumb-up {
+          transform: translateY(-100%);
+        }
+        .pg-vertical .thumb-up i:before {
+          content: "";
+        }
+        .pg-vertical .thumb-down {
+          top: auto;
+          transform: translateY(100%);
+        }
+        .pg-vertical .thumb-down i:before {
+          content: "";
+        }
+        .pg-vertical .product-label-group {
+          left: 14rem;
+        }
+      }
+      @media (min-width: 1600px) {
+        .container-fluid .product-thumbs.owl-carousel {
+          width: calc(100% + 20px);
+          margin: 0 -10px;
+        }
+        .container-fluid .product-thumb {
+          margin: 0 10px;
+        }
+        .container-fluid .product-thumbs-wrap {
+          margin-top: 20px;
+        }
+        .container-fluid .product-thumbs .owl-prev {
+          left: 10px;
+        }
+        .container-fluid .product-thumbs .owl-next {
+          right: 10px;
+        }
+        .container-fluid .pg-vertical .product-thumb {
+          margin: 0 0 20px;
+        }
+        .container-fluid .pg-vertical .product-thumbs-wrap {
+          margin: 0 20px 0 0;
+        }
+        .container-fluid .pg-vertical .product-single-carousel {
+          max-width: calc(100% - 129px);
+        }
+      }
+      .tab-nav-simple .nav-item .nav-link.active,
+.tab-nav-simple .nav-item.show .nav-link,
+.tab-nav-simple .nav-item:hover .nav-link {
+    border-bottom-color: #26c
+}
+
+.tab-content>.tab-pane {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 0 !important;
+    opacity: 0;
+    z-index: -1;
+    transition: visibility 0.3s, opacity 0.3s
+}
+
+.tab-content>.tab-pane:not(.active) {
+    overflow: hidden;
+    visibility: hidden
+}
+
+.tab-content>.active {
+    position: relative;
+    height: auto !important;
+    opacity: 1;
+    z-index: auto
+}
+    </style>
+
+    <script>
+      WebFontConfig = {
+        google: {
+          families: ["Poppins:400,500,600,700"],
+        },
+      };
+      (function (d) {
+        var wf = d.createElement("script"),
+          s = d.scripts[0];
+        wf.src = "js/webfont.js";
+        wf.async = true;
+        s.parentNode.insertBefore(wf, s);
+      })(document);
+    </script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/fontawesome-free/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/animate/animate.min.css"
+    />
+
+    <!-- Plugins CSS File -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/magnific-popup/magnific-popup.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/owl-carousel/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/photoswipe/photoswipe.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/photoswipe/default-skin/default-skin.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/sticky-icon/stickyicon.css"
+    />
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" type="text/css" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <main class="mt-12 single-product">
+        <div class="mb-20 pb-12">
+          <div class="max-w-[1220px] mx-auto w-full px-5">
+<<<<<<< HEAD
+            <div class="product product-single flex px-2.5 mb-7">
+              <div class="w-1/2 px-2.5 sticky-sidebar-wrapper">
+=======
+            <div class="product product-single block md:flex px-2.5 mb-7">
+              <div class="w-full md:w-1/2 px-2.5 sticky-sidebar-wrapper">
+>>>>>>> master
+                <div
+                  class="product-gallery pg-vertical sticky-sidebar"
+                  data-sticky-options="{'minWidth': 767}"
+                >
+                  <div
+                    class="product-single-carousel owl-carousel owl-theme owl-nav-inner gutter-no"
+                  >
+                    <figure class="product-image relative">
+                      <img
+                        src="images/product/product-1-1-580x652.jpg"
+                        data-zoom-image="images/product/product-1-1-800x900.jpg"
+                        alt="Women's Brown Leather Backpacks"
+                        width="800"
+                        height="900"
+                      />
+                    </figure>
+                    <figure class="product-image relative">
+                      <img
+                        src="images/product/product-1-2-580x652.jpg"
+                        data-zoom-image="images/product/product-1-2-800x900.jpg"
+                        alt="Women's Brown Leather Backpacks"
+                        width="800"
+                        height="900"
+                      />
+                    </figure>
+                    <figure class="product-image relative">
+                      <img
+                        src="images/product/product-1-3-580x652.jpg"
+                        data-zoom-image="images/product/product-1-3-800x900.jpg"
+                        alt="Women's Brown Leather Backpacks"
+                        width="800"
+                        height="900"
+                      />
+                    </figure>
+                    <figure class="product-image relative">
+                      <img
+                        src="images/product/product-1-4-580x652.jpg"
+                        data-zoom-image="images/product/product-1-4-800x900.jpg"
+                        alt="Women's Brown Leather Backpacks"
+                        width="800"
+                        height="900"
+                      />
+                    </figure>
+                  </div>
+                  <div class="product-thumbs-wrap">
+                    <div class="product-thumbs">
+                      <div
+                        class="product-thumb active cursor-pointer overflow-hidden relative"
+                      >
+                        <img
+                          src="images/product/product-1-1-109x122.jpg"
+                          alt="product thumbnail"
+                          width="109"
+                          height="122"
+                        />
+                      </div>
+                      <div
+                        class="product-thumb cursor-pointer overflow-hidden relative"
+                      >
+                        <img
+                          src="images/product/product-1-2-109x122.jpg"
+                          alt="product thumbnail"
+                          width="109"
+                          height="122"
+                        />
+                      </div>
+                      <div
+                        class="product-thumb cursor-pointer overflow-hidden relative"
+                      >
+                        <img
+                          src="images/product/product-1-3-109x122.jpg"
+                          alt="product thumbnail"
+                          width="109"
+                          height="122"
+                        />
+                      </div>
+                      <div
+                        class="product-thumb cursor-pointer overflow-hidden relative"
+                      >
+                        <img
+                          src="images/product/product-1-4-109x122.jpg"
+                          alt="product thumbnail"
+                          width="109"
+                          height="122"
+                        />
+                      </div>
+                    </div>
+                    <button class="thumb-up disabled">
+                      <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="thumb-down disabled">
+                      <i class="fas fa-chevron-right"></i>
+                    </button>
+                  </div>
+                  <div
+                    class="flex flex-col absolute left-56 z-10 top-8 max-w-[10rem]"
+                  >
+                    <label
+                      class="inline-block text-center mb-2 py-[0.2rem] px-[1.1rem] text-[1.1rem] rounded-[2px] font-semibold text-white uppercase bg-[#26c]"
+                      >new</label
+                    >
+                  </div>
+                </div>
+              </div>
+<<<<<<< HEAD
+              <div class="w-1/2 px-2.5">
+=======
+              <div class="w-full md:w-1/2 px-2.5">
+>>>>>>> master
+                <div class="product-details relative pl-4">
+                  <div class="flex justify-between items-center pt-2">
+                    <ul class="flex items-center mt-0 mr-8 mb-4 ml-0">
+                      <li>
+                        <a href="demo1.html"><i class="fas fa-home"></i></a>
+                      </li>
+                      <i
+                        class="fas fa-chevron-right text-base font-bold mx-3"
+                      ></i>
+                      <li>
+                        <a
+                          href="#"
+                          class="active text-[#999999] hover:text-[#222222] transition-colors duration-300"
+                          >Products</a
+                        >
+                      </li>
+                      <i
+                        class="fas fa-chevron-right text-base font-bold mx-3"
+                      ></i>
+                      <li>Detail</li>
+                    </ul>
+
+                    <ul class="flex items-center mb-4">
+                      <li class="product-nav-prev group relative">
+                        <a href="#" class="inline-flex items-center space-x-1">
+                          <i class="fas fa-arrow-left"></i>
+                          <span>Prev</span>
+
+                          <span
+                            class="absolute top-[126%] -right-16 z-30 w-[120px] px-[5px] pb-[5px] leading-[1.5] text-center bg-white shadow-[1px_1px_7px_rgba(0,0,0,0.1)] opacity-0 invisible scale-90 origin-top transition-opacity transition-transform duration-300 group-hover:opacity-100 group-hover:visible group-hover:scale-100"
+                          >
+                            <img
+                              class="pt-1.5"
+                              src="images/product/product-thumb-prev.jpg"
+                              alt="product thumbnail"
+                              width="110"
+                              height="123"
+                            />
+                            <span
+                              class="pr-0 text-[#666666] text-[1.2rem] font-normal"
+                              >Sed egtas Dnte Comfort</span
+                            >
+                          </span>
+                        </a>
+                      </li>
+                      <li class="product-nav-next ml-8 group relative">
+                        <a href="#" class="inline-flex items-center space-x-1">
+                          <span>Next</span>
+                          <i class="fas fa-arrow-right"></i>
+                          <span
+                            class="absolute top-[126%] -right-16 z-30 w-[120px] px-[5px] pb-[5px] leading-[1.5] text-center bg-white shadow-[1px_1px_7px_rgba(0,0,0,0.1)] opacity-0 invisible scale-90 origin-top transition-opacity transition-transform duration-300 group-hover:opacity-100 group-hover:visible group-hover:scale-100"
+                          >
+                            <img
+                              class="pt-1.5"
+                              src="images/product/product-thumb-next.jpg"
+                              alt="product thumbnail"
+                              width="110"
+                              height="123"
+                            />
+                            <span class="pr-0 text-[#666666] text-[1.2rem] font-normal"
+                              >Sed egtas Dnte Comfort</span
+                            >
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <h1
+                    class="mb-[0.6rem] text-[2.6rem] font-bold tracking-[-0.025em] whitespace-normal text-[#222222]"
+                  >
+                    Converse Training Shoes
+                  </h1>
+                  <div class="mb-[1.8rem] text-[#999999] text-[1.2rem]">
+                    SKU: <span class="mr-[1.9rem] ml-[3px]">12345670</span> BRAND:
+                    <span class="mr-[1.9rem] ml-[3px]">The Northland</span>
+                  </div>
+                  <div class="block mb-[1.1rem] text-[#d26e4b] text-[3rem] font-bold tracking-[-0.025em] leading-none">$113.00</div>
+                  <div class="flex mb-7">
+                    <div class="flex items-center space-x-1">
+                        <i class="fas fa-star text-[#666]"></i>
+                        <i class="fas fa-star text-[#666]0"></i>
+                        <i class="fas fa-star text-[#666]"></i>
+                        <i class="fas fa-star text-gray-300"></i>
+                        <i class="fas fa-star text-gray-300"></i>
+                      </div>
+                      <a
+                      href="#product-tab-reviews"
+                      class="ml-4 text-[1.2rem] text-[#999]"
+                    >
+                      ( 11 reviews )
+                    </a>     
+                  </div>             
+                  <p class="text-[1.4rem] leading-[1.86] mb-8">
+                    Sed egestas, ante et vulputate volutpat, eros pede semper
+                    est, vitae luctus metus libero eu augue. Morbi purus
+                    liberpuro ate vol faucibus adipiscing.
+                  </p>
+                  <div class="product-variations flex items-start leading-[37px] mb-4">
+                    <label class="min-w-[7rem] mb-4 capitalize text-[16px] font-normal tracking-[-0.025em] text-[#222]">Color:</label>
+                    <div class="">
+                      <select name="color" class="w-[20rem] text-[1.3rem] max-w-none p-[0.8rem] pr-[3rem] pl-[1.4rem] text-[#222222] border border-[#d7d7d7] rounded-[2px] leading-[1.5] font-normal shadow-none outline-none">
+                        <option value="" selected="selected">
+                          Choose an Option
+                        </option>
+                        <option value="white">White</option>
+                        <option value="black">Black</option>
+                        <option value="brown">Brown</option>
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                        <option value="yellow">Yellow</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="product-variations flex items-start leading-[37px] mb-4">
+                    <label class="min-w-[7rem] mb-4 capitalize text-[16px] font-normal tracking-[-0.025em] text-[#222]">Size:</label>
+                    <div class="relative flex items-start flex-wrap flex-1">
+                      <div class="">
+                        <select name="size" class="w-[20rem] text-[1.3rem] max-w-none p-[0.8rem] pr-[3rem] pl-[1.4rem] text-[#222222] border border-[#d7d7d7] rounded-[2px] leading-[1.5] font-normal shadow-none outline-none">
+                          <option value="" selected="selected">
+                            Choose an Option
+                          </option>
+                          <option value="s">Small</option>
+                          <option value="m">Medium</option>
+                          <option value="l">Large</option>
+                          <option value="xl">Extra Large</option>
+                        </select>
+                      </div>
+                      <a
+                        href="#"
+                        class="product-variation-clean block absolute mt-4 py-[0.3em] px-[1em] left-0 top-[calc(100%-4px)] text-[1rem] leading-[1.6] bg-[#f4f4f4] text-[#000000]"
+                        style="display: none"
+                        >Clean All</a
+                      >
+                    </div>
+                  </div>
+                  <div class="product-variation-price hidden  pt-10">
+                    <span class="mb-4 text-[#222222] text-[2.4rem] font-bold tracking-[-0.025em]">$239.00</span>
+                  </div>
+
+                  <hr class="mb-8 border-0 border-t border-t-[#eeeeee]" />
+
+                  <div class="flex items-start mb-4">
+                    <div class="flex items-start flex-wrap flex-1">
+                      <div class="inline-flex w-[11rem] h-[4.5rem] mr-4">
+                        <button class="p-0 w-[3.1rem] border border-[#ebebeb] text-[1.2rem] text-[#222222] bg-transparent cursor-pointer rounded-l-[0.3rem] fas fa-minus"></button>
+                        <input
+                          class="quantity font-bold flex-1 p-0 h-inherit text-[1.4rem] border border-[#ebebeb] border-y border-x-0 text-[#222222] text-center max-w-[48px]"
+                          type="number"
+                          min="1"
+                          max="1000000"
+                        />
+                        <button class="p-0 w-[3.1rem] border border-[#ebebeb] text-[1.2rem] text-[#222222] bg-transparent cursor-pointer rounded-l-[0.3rem] fas fa-plus"></button>
+                      </div>
+                      <button
+                      class="btn-product btn-cart leading-[2.9] px-[0.6em] py-0 text-center whitespace-nowrap overflow-hidden text-ellipsis 
+                             text-white disabled:!text-[#999]
+                             border-[#ccc] mr-[5px] rounded-[0.3rem] max-w-[20.7rem] h-[4.5rem] border-0 flex-1 min-w-[13rem] 
+                             text-[1.4rem] 
+                             disabled:bg-[#e4eaec] disabled:cursor-not-allowed 
+                             bg-[#2266cc]"
+                    >
+                      <i class="fas fa-shopping-bag mr-4"></i>Add to Cart
+                    </button>
+                    
+                    </div>
+                  </div>
+                  <hr class="mb-6 mt-8 border-0 border-t border-t-[#eeeeee]" />
+                  <div class="flex items-center">
+                    <div class="flex items-center mr-8">
+                      <a
+                        href="#"
+                        class="m-[2px] mr-[8px] w-[30px] h-[30px] leading-[28px] text-[1.5rem] rounded-full text-inherit text-center transition-colors transition-border transition-bg duration-[400ms] social-facebook fab fa-facebook-f"
+                      ></a>
+                      <a
+                        href="#"
+                        class="m-[2px] mr-[8px] w-[30px] h-[30px] leading-[28px] text-[1.5rem] rounded-full text-inherit text-center transition-colors transition-border transition-bg duration-[400ms] social-twitter fab fa-twitter"
+                      ></a>
+                      <a
+                        href="#"
+                        class="m-[2px] mr-[8px] w-[30px] h-[30px] leading-[28px] text-[1.5rem] rounded-full text-inherit text-center transition-colors transition-border transition-bg duration-[400ms] social-pinterest fab fa-pinterest-p"
+                      ></a>
+                    </div>
+                    <span class="ml-[-1rem] mr-[1.8rem] h-[2.5rem] w-[1px] bg-[#e1e1e1]"></span>
+                    <a href="#" class="inline-block py-[0.5rem] font-normal text-[1.4rem] bg-transparent transition-colors duration-300 normal-case text-[#666666] mr-12"
+                      ><i class="far fa-heart mr-4 text-2xl"></i>Add to wishlist</a
+                    >
+                    <a href="#" class="inline-block py-[0.5rem] font-normal text-[1.4rem] bg-transparent transition-colors duration-300 normal-case text-[#666666]"
+                      ><i class="fas fa-scale-balanced mr-4 text-2xl"></i>Add to compare</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab tab-nav-simple product-tabs">
+<<<<<<< HEAD
+              <ul class="nav nav-tabs flex flex-wrap border-b border-[#ebebeb] justify-center px-[2.5rem] py-[1rem]" role="tablist">
+                <li class="nav-item">
+=======
+              <ul class="nav nav-tabs flex flex-wrap border-b border-[#ebebeb] justify-center px-[2.5rem] py-[1rem] pb-0" role="tablist">
+                <li class="nav-item leading-[44.6px]">
+>>>>>>> master
+                  <a class="nav-link text-[2rem] font-bold capitalize text-[#222222] tracking-normal px-[2.5rem] py-[1rem] leading-[1.2] border-b-2 border-transparent bg-transparent active" href="#product-tab-description"
+                    >Description</a
+                  >
+                </li>
+<<<<<<< HEAD
+                <li class="nav-item">
+=======
+                <li class="nav-item leading-[44.6px]">
+>>>>>>> master
+                  <a class="nav-link text-[2rem] font-bold capitalize text-[#222222] tracking-normal px-[2.5rem] py-[1rem] leading-[1.2] border-b-2 border-transparent bg-transparent " href="#product-tab-additional"
+                    >Additional information</a
+                  >
+                </li>
+<<<<<<< HEAD
+                <li class="nav-item">
+=======
+                <li class="nav-item leading-[44.6px]">
+>>>>>>> master
+                  <a class="nav-link text-[2rem] font-bold capitalize text-[#222222] tracking-normal px-[2.5rem] py-[1rem] leading-[1.2] border-b-2 border-transparent bg-transparent " href="#product-tab-size-guide"
+                    >Size Guide</a
+                  >
+                </li>
+<<<<<<< HEAD
+                <li class="nav-item">
+=======
+                <li class="nav-item leading-[44.6px]">
+>>>>>>> master
+                  <a class="nav-link text-[2rem] font-bold capitalize text-[#222222] tracking-normal px-[2.5rem] py-[1rem] leading-[1.2] border-b-2 border-transparent bg-transparent " href="#product-tab-reviews"
+                    >Reviews (2)</a
+                  >
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active in py-[1.5rem] px-[0.2rem]" id="product-tab-description">
+<<<<<<< HEAD
+                  <div class="flex px-2.5 mt-12">
+=======
+                  <div class="block md:flex px-2.5 mt-12">
+>>>>>>> master
+                    <div class="w-full md:w-1/2 px-2.5">
+                      <h5
+                        class="font-semibold text-[2rem] leading-[24px] mb-8 tracking-[-0.025em]"
+                      >
+                        Features
+                      </h5>
+                      <p class="leading-[1.87] mb-4">
+                        Praesent id enim sit amet.Tdio vulputate eleifend in in
+                        tortor. ellus massa. siti iMassa ristique sit amet
+                        condim vel, facilisis quimequistiqutiqu amet condim
+                        Dilisis Facilisis quis sapien. Praesent id enim sit
+                        amet.
+                      </p>
+                      <ul class="mb-16">
+                        <li><i class="fas fa-check mr-3"></i>Praesent id enim sit amet.Tdio vulputate</li>
+                        <li><i class="fas fa-check mr-3"></i>
+                          Eleifend in in tortor. ellus massa.Dristique sitii
+                        </li>
+                        <li><i class="fas fa-check mr-3"></i>Massa ristique sit amet condim vel</li>
+                        <li><i class="fas fa-check mr-3"></i>
+                          Dilisis Facilisis quis sapien. Praesent id enim sit
+                          amet
+                        </li>
+                      </ul>
+                      <h5
+                        class="font-semibold text-[2rem] leading-[24px] mb-8 tracking-[-0.025em]"
+                      >
+                        Specifications
+                      </h5>
+                      <table class="table w-full border-collapse">
+                        <tbody>
+                          <tr>
+                            <th class="p-[10px] text-dark pl-0 text-left align-top border-b border-[#e9e9e9] font-semibold">
+                              Material
+                            </th>
+                            <td class="pl-4 p-[10px] text-left align-top border-b border-[#e9e9e9]">Praesent id enim sit amet.Tdio</td>
+                          </tr>
+                          <tr>
+                            <th class="p-[10px] text-dark pl-0 text-left align-top border-b border-[#e9e9e9] font-semibold">
+                              Claimed Size
+                            </th>
+                            <td class="pl-4 p-[10px] text-left align-top border-b border-[#e9e9e9]">Praesent id enim sit</td>
+                          </tr>
+                          <tr>
+                            <th class="p-[10px] text-dark pl-0 text-left align-top border-b border-[#e9e9e9] font-semibold">
+                              Recommended Use
+                            </th>
+                            <td class="pl-4 p-[10px] text-left align-top border-b border-[#e9e9e9]">
+                              Praesent id enim sit amet.Tdio vulputate eleifend
+                              in in tortor. ellus massa. siti
+                            </td>
+                          </tr>
+                          <tr>
+                            <th
+                              class="p-[10px] text-dark pl-0 text-left align-top font-semibold"
+                            >
+                              Manufacturer
+                            </th>
+                            <td class="border-no pl-4">Praesent id enim</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="w-full md:w-1/2 px-2.5">
+                      <h5
+                        class="font-semibold text-[2rem] leading-[24px] mb-8 tracking-[-0.025em]"
+                      >
+                        Video Description
+                      </h5>
+                      <figure class="mb-4 inline-block relative">
+                        <img
+                          src="images/product/product.jpg"
+                          width="559"
+                          height="370"
+                          alt="Product"
+                        />
+                        <a
+                          class="flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 items-center justify-center p-0 text-[35px] w-[78px] h-[78px] rounded-full bg-[#222] shadow-[0_5px_10px_rgba(0,0,0,0.2)] text-white"
+                          href="video/memory-of-a-woman.mp4"
+                        >
+                          <i class="fas fa-play"></i>
+                        </a>
+                      </figure>
+                      <div class="max-w-[559px] flex flex-wrap">
+                        <div
+                          class="icon-box flex items-center justify-center icon-border pt-2 pb-2 mb-8 mr-20"
+                        >
+                          <div class="inline-flex items-center justify-center w-[5.2rem] h-[5.2rem] rounded-full border border-[#cdcdcd] text-[3rem] mr-8">
+                            <i class="fas fa-lock text-4xl"></i>
+                          </div>
+                          <div class="">
+                            <h4
+                              class="text-[1.5rem] mb-0 tracking-[-0.01em] leading-[1] font-semibold"
+                            >
+                              2 year warranty
+                            </h4>
+                            <p class="text-[1.3rem] text-[#999] leading-[1.72] mb-0">Guarantee with no doubt</p>
+                          </div>
+                        </div>
+                        <div class="my-[1.3rem] h-[4.4rem] mr-[5rem] w-[1px] bg-[#e1e1e1]"></div>
+                        <div
+                          class="icon-box flex items-center justify-center icon-border pt-2 pb-2 mb-8"
+                        >
+                          <div class="inline-flex items-center justify-center w-[5.2rem] h-[5.2rem] rounded-full border border-[#cdcdcd] text-[3rem] mr-8">
+                            <i class="fas fa-truck"></i>
+                          </div>
+                          <div class="">
+                            <h4
+                              class="text-[1.5rem] mb-0 tracking-[-0.01em] leading-[1] font-semibold"
+                            >
+                              Free shipping
+                            </h4>
+                            <p class="text-[1.3rem] text-[#999] leading-[1.72] mb-0">On orders over $50.00</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="product-tab-additional">
+                  <ul class="list-none">
+                    <li>
+                      <label class="inline-block min-w-[20rem] text-[#222]">Brands:</label>
+                      <p>SkillStar, SLS</p>
+                    </li>
+                    <li>
+                      <label class="inline-block min-w-[20rem] text-[#222]">Color:</label>
+                      <p>Blue, Brown</p>
+                    </li>
+                    <li>
+                      <label class="inline-block min-w-[20rem] text-[#222]">Size:</label>
+                      <p>Large, Medium, Small</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-pane flex" id="product-tab-size-guide">
+                  <figure class="mt-8 mb-8 flex justify-center items-center basis-[36%] shrink-0 grow-0 text-center px-[10px] ">
+                    <img
+                      src="images/product/size_guide.png"
+                      alt="Size Guide Image"
+                      width="217"
+                      height="398"
+                    />
+                  </figure>
+                  <figure class="overflow-x-auto basis-[64%] mt-8 mb-8">
+                    <table class="w-full border-collapse">
+                      <thead>
+                        <tr class=" bg-[#f4f4f2] text-dark">
+                          <th class="pl-12 py-[30px] font-semibold text-left">SIZE</th>
+                          <th class="py-[30px] font-semibold text-left">CHEST(IN.)</th>
+                          <th class="py-[30px] font-semibold text-left">WEIST(IN.)</th>
+                          <th class="py-[30px] font-semibold text-left">HIPS(IN.)</th>
+                        </tr>
+                      </thead>
+                      <tbody class="text-gray-800">
+                        <tr>
+                          <th class="pl-12 py-[12px] font-bold text-left">XS</th>
+                          <td class="py-[12px] font-bold text-left">34-36</td>
+                          <td class="py-[12px] font-bold text-left">27-29</td>
+                          <td class="py-[12px] font-bold text-left">34.5-36.5</td>
+                        </tr>
+                        <tr class="bg-[#ebebeb]">
+                          <th class="pl-12 py-[12px] font-bold text-left">S</th>
+                          <td class="py-[12px] font-bold text-left">36-38</td>
+                          <td class="py-[12px] font-bold text-left">29-31</td>
+                          <td class="py-[12px] font-bold text-left">36.5-38.5</td>
+                        </tr>
+                        <tr>
+                          <th class="pl-12 py-[12px] font-bold text-left">M</th>
+                          <td class="py-[12px] font-bold text-left">38-40</td>
+                          <td class="py-[12px] font-bold text-left">31-33</td>
+                          <td class="py-[12px] font-bold text-left">38.5-40.5</td>
+                        </tr>
+                        <tr class="bg-[#ebebeb]">
+                          <th class="pl-12 py-[12px] font-bold text-left">L</th>
+                          <td class="py-[12px] font-bold text-left">40-42</td>
+                          <td class="py-[12px] font-bold text-left">33-36</td>
+                          <td class="py-[12px] font-bold text-left">40.5-43.5</td>
+                        </tr>
+                        <tr>
+                          <th class="pl-12 py-[12px] font-bold text-left">XL</th>
+                          <td class="py-[12px] font-bold text-left">42-45</td>
+                          <td class="py-[12px] font-bold text-left">36-40</td>
+                          <td class="py-[12px] font-bold text-left">43.5-47.5</td>
+                        </tr>
+                        <tr class="bg-[#ebebeb]">
+                          <th class="pl-12 py-[12px] font-bold text-left">XXL</th>
+                          <td class="py-[12px] font-bold text-left">45-48</td>
+                          <td class="py-[12px] font-bold text-left">40-44</td>
+                          <td class="py-[12px] font-bold text-left">47.5-51.5</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </figure>
+                </div>
+                <div class="tab-pane pt-12" id="product-tab-reviews">
+<<<<<<< HEAD
+                  <div class="flex">
+=======
+                  <div class="block md:flex">
+>>>>>>> master
+                    <div class="w-full lg:w-1/3 mb-12 px-2.5">
+                      <div class="flex items-center mb-4">
+                        <mark class="text-[6rem] font-bold tracking-[-0.025em] leading-[1] text-[#2266cc] bg-transparent mr-[1.8rem]">5.0</mark>
+                        <div class="">
+                          <span class="">Average Rating</span>
+                          <div class="flex mb-7">
+                            <div class="flex items-center space-x-1">
+                                <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                              </div>
+                              <a
+                              href="#product-tab-reviews"
+                              class="ml-4 text-[1.1rem] text-[#999] capitalize"
+                            >
+                              ( 2 reviews )
+                            </a>     
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mb-4">
+                        <div class="flex items-center">
+                            <div class="flex items-center space-x-1 mr-7">
+                                <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                              </div>
+                          <div class="bg-[#eee] h-[0.8rem] w-[20rem] max-w-full">
+                            <span class="block h-full rounded-inherit bg-[#999] rounded-full" style="width: 100%"></span>
+                          </div>
+                          <div class="ml-8">100%</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex items-center space-x-1 mr-7">
+                                <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                <i class="fas fa-star text-[rgba(0,0,0,0.16)] text-[11px]"></i>
+                              </div>
+                          <div class="bg-[#eee] h-[0.8rem] w-[20rem] max-w-full">
+                            <span class="block h-full rounded-inherit bg-[#999] rounded-full" style="width: 0%"></span>
+                          </div>
+                          <div class="ml-8">0%</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex items-center space-x-1 mr-7">
+                                <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                <i class="fas fa-star text-[rgba(0,0,0,0.16)] text-[11px]"></i>
+                                <i class="fas fa-star text-[rgba(0,0,0,0.16)] text-[11px]"></i>
+                              </div>
+                          <div class="bg-[#eee] h-[0.8rem] w-[20rem] max-w-full">
+                            <span class="block h-full rounded-inherit bg-[#999] rounded-full" style="width: 0%"></span>
+                          </div>
+                          <div class="ml-8">0%</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex items-center space-x-1 mr-7">
+                                <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                <i class="fas fa-star text-[rgba(0,0,0,0.16)] text-[11px]"></i>
+                                <i class="fas fa-star text-[rgba(0,0,0,0.16)] text-[11px]"></i>
+                                <i class="fas fa-star text-[rgba(0,0,0,0.16)] text-[11px]"></i>
+                              </div>
+                          <div class="bg-[#eee] h-[0.8rem] w-[20rem] max-w-full">
+                            <span class="block h-full rounded-inherit bg-[#999] rounded-full" style="width: 0%"></span>
+                          </div>
+                          <div class="ml-8">0%</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex items-center space-x-1 mr-7">
+                                <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                <i class="fas fa-star text-[rgba(0,0,0,0.16)] text-[11px]"></i>
+                                <i class="fas fa-star text-[rgba(0,0,0,0.16)] text-[11px]"></i>
+                                <i class="fas fa-star text-[rgba(0,0,0,0.16)] text-[11px]"></i>
+                                <i class="fas fa-star text-[rgba(0,0,0,0.16)] text-[11px]"></i>
+                              </div>
+                          <div class="bg-[#eee] h-[0.8rem] w-[20rem] max-w-full">
+                            <span class="block h-full rounded-inherit bg-[#999] rounded-full" style="width: 0%"></span>
+                          </div>
+                          <div class="ml-8">0%</div>
+                        </div>
+                      </div>
+                      <a
+                        class="btn btn-dark btn-rounded inline-flex items-center justify-center border-2 border-[#222] bg-[#222] text-white outline-none py-7 px-16 font-bold text-[1.4rem] leading-[1.2] uppercase text-center whitespace-nowrap cursor-pointer transition-colors duration-300 ease-in-out rounded-[3px] hover:bg-[#3a3a3a]"
+                        href="#"
+                        >Submit Review</a
+                      >
+                    </div>
+                    <div class="w-full lg:w-2/3 comments pt-4 pb-20 p-4">
+                      <nav class="flex items-center flex-wrap relative z-21 justify-between pb-4 mb-12 border-b border-[#e1e1e1] transition-all duration-400">
+                        <div class="flex items-center flex-wrap">
+                          <div class="mr-7 mb-4 flex-nowrap">
+                            <a href="#" class="text-lg px-[1.08em] py-[0.82em] rounded-[3px] border-2 border-[#e4eaec] text-[#666] font-bold tracking-normal leading-[1.2] uppercase text-center transition-colors duration-300 cursor-pointer whitespace-nowrap"
+                              >All Reviews</a
+                            >
+                          </div>
+                          <div class="mr-7 mb-4 flex-nowrap">
+                            <a href="#" class="text-lg px-[1.08em] py-[0.82em] rounded-[3px] border-2 border-[#e4eaec] text-[#666] font-bold tracking-normal leading-[1.2] uppercase text-center transition-colors duration-300 cursor-pointer whitespace-nowrap"
+                              >With Images</a
+                            >
+                          </div>
+                          <div class="mb-4 flex-nowrap">
+                            <a href="#" class="text-lg px-[1.08em] py-[0.82em] rounded-[3px] border-2 border-[#e4eaec] text-[#666] font-bold tracking-normal leading-[1.2] uppercase text-center transition-colors duration-300 cursor-pointer whitespace-nowrap"
+                              >With Videos</a
+                            >
+                          </div>
+                        </div>
+                        <div class="flex items-center flex-wrap">
+                          <div
+                            class="mb-4 flex-nowrap toolbox-sort select-box text-dark"
+                          >
+<<<<<<< HEAD
+                            <label class="mr-[0.8rem] font-semibold uppercase text-[#222]">Sort By :</label>
+=======
+                            <label class="hidden md:block mr-[0.8rem] font-semibold uppercase text-[#222]">Sort By :</label>
+>>>>>>> master
+                            <select name="orderby" class="text-[1.3rem] min-w-[15rem] max-w-[15rem] p-[0.8rem] pl-[1.4rem] text-[#222222] border border-[#d7d7d7] rounded-[2px] leading-[1.5] font-normal shadow-none outline-none">
+                              <option value="">Default Order</option>
+                              <option value="newest" selected="selected">
+                                Newest Reviews
+                              </option>
+                              <option value="oldest">Oldest Reviews</option>
+                              <option value="high_rate">Highest Rating</option>
+                              <option value="low_rate">Lowest Rating</option>
+                              <option value="most_likely">Most Likely</option>
+                              <option value="most_unlikely">
+                                Most Unlikely
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                      </nav>
+                      <ul class="">
+                        <li class="pb-[3rem] mb-[3rem] border-b border-[#e1e1e1]">
+                          <div class="flex items-start relative ">
+                            <figure class="max-w-[6rem] flex-[0_0_6rem] h-[6rem] overflow-hidden">
+                              <a href="#">
+                                <img
+                                class="block w-full h-full object-cover"
+                                  src="images/blog/comments/1.jpg"
+                                  alt="avatar"
+                                />
+                              </a>
+                            </figure>
+                            <div class="pl-[2.5rem] pt-[0.8rem]">
+                                <div class="flex items-center space-x-1 mb-4">
+                                    <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                    <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                    <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                    <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                    <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                  </div>
+                              <div class="mb-4">
+                                <span class="block mb-[0.5rem] text-[1.3rem] text-[#999] leading-none"
+                                  >by
+                                  <span
+                                    class="font-semibold uppercase text-dark"
+                                    >John Doe</span
+                                  >
+                                  on
+                                  <span class="font-semibold text-dark"
+                                    >Nov 22, 2018</span
+                                  ></span
+                                >
+                              </div>
+
+                              <div class="mb-10">
+                                <p>
+                                  Sed pretium, ligula sollicitudin laoreet
+                                  viverra, tortor libero sodales leo, eget
+                                  blandit nunc tortor eu nibh. Nullam mollis. Ut
+                                  justo. Suspendisse potenti. Sed egestas, ante
+                                  et vulputate volutpat, eros pede semper est,
+                                  vitae luctus metus libero eu augue.
+                                </p>
+                              </div>
+                              <div class="flex">
+                                <img
+                                  class="w-[6rem] h-full mr-[1rem] cursor-zoom-in"
+                                  src="images/products/product1.jpg"
+                                  width="280"
+                                  height="315"
+                                  alt="product"
+                                />
+
+                                <img
+                                  class="w-[6rem] h-full mr-[1rem] cursor-zoom-in"
+                                  src="images/products/product3.jpg"
+                                  width="280"
+                                  height="315"
+                                  alt="product"
+                                />
+
+                                <a
+                                  class="w-[6rem] h-[6rem] mr-[1rem] cursor-zoom-in flex justify-center items-center"
+                                  style="
+                                    background-image: url(images/product/product.jpg);
+                                    background-size: cover;
+                                  "
+                                  href="video/memory-of-a-woman.mp4"
+                                >
+                                  <i class="fas fa-play w-[3rem] h-[3rem] leading-[3rem] text-center rounded-full text-white bg-[rgba(0,0,0,0.7)]"></i>
+                                </a>
+                              </div>
+                              <div class="feeling mt-10">
+                                <button
+                                  class="btn btn-link btn-icon-left btn-slide-up btn-infinite like font-bold text-[#222] mr-4"
+                                >
+                                  <i class="fa fa-thumbs-up"></i>
+                                  Like (<span class="count">0</span>)
+                                </button>
+                                <button
+                                  class="btn btn-link btn-icon-left btn-slide-down btn-infinite unlike font-bold text-[#222]"
+                                >
+                                  <i class="fa fa-thumbs-down"></i>
+                                  Unlike (<span class="count">0</span>)
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="pb-[3rem] mb-[3rem] border-b border-[#e1e1e1]">
+                            <div class="flex items-start relative ">
+                              <figure class="max-w-[6rem] flex-[0_0_6rem] h-[6rem] overflow-hidden">
+                                <a href="#">
+                                  <img
+                                  class="block w-full h-full object-cover"
+                                    src="images/blog/comments/1.jpg"
+                                    alt="avatar"
+                                  />
+                                </a>
+                              </figure>
+                              <div class="pl-[2.5rem] pt-[0.8rem]">
+                                  <div class="flex items-center space-x-1 mb-4">
+                                      <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                      <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                      <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                      <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                      <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                                    </div>
+                                <div class="mb-4">
+                                  <span class="block mb-[0.5rem] text-[1.3rem] text-[#999] leading-none"
+                                    >by
+                                    <span
+                                      class="font-semibold uppercase text-dark"
+                                      >John Doe</span
+                                    >
+                                    on
+                                    <span class="font-semibold text-dark"
+                                      >Nov 22, 2018</span
+                                    ></span
+                                  >
+                                </div>
+  
+                                <div class="mb-10">
+                                  <p>
+                                    Sed pretium, ligula sollicitudin laoreet
+                                    viverra, tortor libero sodales leo, eget
+                                    blandit nunc tortor eu nibh. Nullam mollis. Ut
+                                    justo. Suspendisse potenti. Sed egestas, ante
+                                    et vulputate volutpat, eros pede semper est,
+                                    vitae luctus metus libero eu augue.
+                                  </p>
+                                </div>
+                                <div class="flex">
+                                  <img
+                                    class="w-[6rem] h-full mr-[1rem] cursor-zoom-in"
+                                    src="images/products/product1.jpg"
+                                    width="280"
+                                    height="315"
+                                    alt="product"
+                                  />
+  
+                                  <img
+                                    class="w-[6rem] h-full mr-[1rem] cursor-zoom-in"
+                                    src="images/products/product3.jpg"
+                                    width="280"
+                                    height="315"
+                                    alt="product"
+                                  />
+  
+                                  <a
+                                    class="w-[6rem] h-[6rem] mr-[1rem] cursor-zoom-in flex justify-center items-center"
+                                    style="
+                                      background-image: url(images/product/product.jpg);
+                                      background-size: cover;
+                                    "
+                                    href="video/memory-of-a-woman.mp4"
+                                  >
+                                    <i class="fas fa-play w-[3rem] h-[3rem] leading-[3rem] text-center rounded-full text-white bg-[rgba(0,0,0,0.7)]"></i>
+                                  </a>
+                                </div>
+                                <div class="feeling mt-10">
+                                  <button
+                                    class="btn btn-link btn-icon-left btn-slide-up btn-infinite like font-bold text-[#222] mr-4"
+                                  >
+                                    <i class="fa fa-thumbs-up"></i>
+                                    Like (<span class="count">0</span>)
+                                  </button>
+                                  <button
+                                    class="btn btn-link btn-icon-left btn-slide-down btn-infinite unlike font-bold text-[#222]"
+                                  >
+                                    <i class="fa fa-thumbs-down"></i>
+                                    Unlike (<span class="count">0</span>)
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                      </ul>
+                      <nav
+                        class="toolbox toolbox-pagination justify-content-end"
+                      >
+                        <ul class="pagination">
+                          <li class="page-item disabled">
+                            <a
+                              class="page-link page-link-prev"
+                              href="#"
+                              aria-label="Previous"
+                              tabindex="-1"
+                              aria-disabled="true"
+                            >
+                              <i class="d-icon-arrow-left"></i>Prev
+                            </a>
+                          </li>
+                          <li class="page-item active" aria-current="page">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item page-item-dots">
+                            <a class="page-link" href="#">6</a>
+                          </li>
+                          <li class="page-item">
+                            <a
+                              class="page-link page-link-next"
+                              href="#"
+                              aria-label="Next"
+                            >
+                              Next<i class="d-icon-arrow-right"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <section class="pt-6 mt-20">
+              <h2 class="title title-center w-full flex justify-center items-center text-center mx-auto mb-10 capitalize text-[3rem] font-bold leading-[1] tracking-[-0.0125em] text-[#222] text-4xl">Related Products</h2>
+
+              <div
+                class="owl-carousel owl-theme owl-nav-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+                data-owl-options="{
+							'items': 5,
+							'nav': false,
+							'loop': false,
+							'dots': true,
+							'margin': 10,
+							'responsive': {
+								'0': {
+									'items': 2
+								},
+								'768': {
+									'items': 3
+								},
+								'992': {
+									'items': 4,
+									'dots': false,
+									'nav': true
+								}
+							}
+						}"
+              >
+              <div class="mb-8 px-2">
+                <div class="product group relative">
+                  <figure class="product-media relative">
+                    <a href="product.html">
+                      <img
+                        src="images/shop/13.jpg"
+                        alt="product"
+                        width="280"
+                        height="315"
+                      />
+                    </a>
+
+                    <!-- Label -->
+                    <div
+                      class="flex flex-col absolute left-8 top-8 max-w-[10rem]"
+                    >
+                      <label
+                        class="inline-block text-center mb-2 py-[0.2rem] px-[1.1rem] text-[1.1rem] rounded-[2px] font-semibold text-white uppercase bg-[#26c]"
+                        >new</label
+                      >
+                    </div>
+
+                    <!-- Action Buttons on Hover -->
+                    <div
+                      class="absolute top-[15px] right-[15px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity transition-[visibility] duration-300"
+                    >
+                      <a
+                        href="#"
+                        class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-[#e1e1e1] rounded-full bg-white text-[#999] text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-cart"
+                        data-toggle="modal"
+                        data-target="#addCartModal"
+                        title="Add to cart"
+                      >
+                        <i class="d-icon-bag"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-[#e1e1e1] rounded-full bg-white text-[#999] text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-wishlist"
+                        title="Add to wishlist"
+                      >
+                        <i class="d-icon-heart"></i>
+                      </a>
+                    </div>
+
+                    <!-- Quick View Button -->
+                    <div
+                      class="absolute left-0 right-0 bottom-0 flex items-center bg-transparent z-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+                    >
+                      <a
+                        href="#"
+                        class="flex items-center justify-center w-full py-[1.14em] bg-[#26c] text-white text-[1.4rem] font-bold leading-[1.2] tracking-[-0.025em] uppercase btn-product btn-quickview"
+                        title="Quick View"
+                        >Quick View</a
+                      >
+                    </div>
+                  </figure>
+
+                  <!-- Product Details -->
+                  <div class="product-details pt-6">
+                    <div
+                      class="mb-2 text-[1rem] font-normal leading-[1] uppercase"
+                    >
+                      <a href="shop-classic-filter.html">Clothing</a>
+                    </div>
+                    <h3
+                      class="text-[1.4rem] font-normal tracking-[-0.01em] text-[#666] mb-[0.3rem]"
+                    >
+                      <a href="product.html">Coast Pool Comfort Jacket</a>
+                    </h3>
+                    <div
+                      class="text-[1.6rem] font-semibold leading-[1.86] text-[#222] truncate block"
+                    >
+                      <ins class="mr-4 no-underline">$199.00</ins>
+                      <del class="text-[#aaa]">$210.00</del>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex items-center space-x-1">
+                            <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                            <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                            <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                            <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                            <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                          </div>
+                      <a
+                        href="product.html"
+                        class="ml-4 my-0.5 whitespace-nowrap overflow-hidden text-ellipsis text-[1.1rem] text-[#aaa] tracking-[0] capitalize"
+                        >( 6 reviews )</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-8 px-2">
+                <div class="product group relative">
+                  <figure class="product-media relative">
+                    <a href="product.html">
+                      <img
+                        src="images/shop/2.jpg"
+                        alt="product"
+                        width="280"
+                        height="315"
+                      />
+                    </a>
+
+                    <!-- Label -->
+                    <div
+                      class="flex flex-col absolute left-8 top-8 max-w-[10rem]"
+                    >
+                      <label
+                        class="inline-block text-center mb-2 py-[0.2rem] px-[1.1rem] text-[1.1rem] rounded-[2px] font-semibold text-white uppercase bg-[#d26e4b]"
+                        >27% off</label
+                      >
+                    </div>
+
+                    <!-- Action Buttons on Hover -->
+                    <div
+                      class="absolute top-[15px] right-[15px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity transition-[visibility] duration-300"
+                    >
+                      <a
+                        href="#"
+                        class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-[#e1e1e1] rounded-full bg-white text-[#999] text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-cart"
+                        data-toggle="modal"
+                        data-target="#addCartModal"
+                        title="Add to cart"
+                      >
+                        <i class="d-icon-bag"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-[#e1e1e1] rounded-full bg-white text-[#999] text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-wishlist"
+                        title="Add to wishlist"
+                      >
+                        <i class="d-icon-heart"></i>
+                      </a>
+                    </div>
+
+                    <!-- Quick View Button -->
+                    <div
+                      class="absolute left-0 right-0 bottom-0 flex items-center bg-transparent z-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+                    >
+                      <a
+                        href="#"
+                        class="flex items-center justify-center w-full py-[1.14em] bg-[#26c] text-white text-[1.4rem] font-bold leading-[1.2] tracking-[-0.025em] uppercase btn-product btn-quickview"
+                        title="Quick View"
+                        >Quick View</a
+                      >
+                    </div>
+                  </figure>
+
+                  <!-- Product Details -->
+                  <div class="product-details pt-6">
+                    <div
+                      class="mb-2 text-[1rem] font-normal leading-[1] uppercase"
+                    >
+                      <a href="shop-classic-filter.html">Clothing</a>
+                    </div>
+                    <h3
+                      class="text-[1.4rem] font-normal tracking-[-0.01em] text-[#666] mb-[0.3rem]"
+                    >
+                      <a href="product.html">Coast Pool Comfort Jacket</a>
+                    </h3>
+                    <div
+                      class="text-[1.6rem] font-semibold leading-[1.86] text-[#222] truncate block"
+                    >
+                      <ins class="mr-4 no-underline">$19.00</ins>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex items-center space-x-1">
+                            <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                            <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                            <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                            <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                            <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                          </div>
+                      <a
+                        href="product.html"
+                        class="ml-4 my-0.5 whitespace-nowrap overflow-hidden text-ellipsis text-[1.1rem] text-[#aaa] tracking-[0] capitalize"
+                        >( 6 reviews )</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-8 px-2">
+                <div class="product group relative">
+                  <figure class="product-media relative">
+                    <a href="product.html">
+                      <img
+                        src="images/shop/13.jpg"
+                        alt="product"
+                        width="280"
+                        height="315"
+                      />
+                    </a>
+
+                    <!-- Label -->
+                    <div
+                      class="flex flex-col absolute left-8 top-8 max-w-[10rem]"
+                    >
+                      <label
+                        class="inline-block text-center mb-2 py-[0.2rem] px-[1.1rem] text-[1.1rem] rounded-[2px] font-semibold text-white uppercase bg-[#26c]"
+                        >new</label
+                      >
+                    </div>
+
+                    <!-- Action Buttons on Hover -->
+                    <div
+                      class="absolute top-[15px] right-[15px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity transition-[visibility] duration-300"
+                    >
+                      <a
+                        href="#"
+                        class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-[#e1e1e1] rounded-full bg-white text-[#999] text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-cart"
+                        data-toggle="modal"
+                        data-target="#addCartModal"
+                        title="Add to cart"
+                      >
+                        <i class="d-icon-bag"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-[#e1e1e1] rounded-full bg-white text-[#999] text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-wishlist"
+                        title="Add to wishlist"
+                      >
+                        <i class="d-icon-heart"></i>
+                      </a>
+                    </div>
+
+                    <!-- Quick View Button -->
+                    <div
+                      class="absolute left-0 right-0 bottom-0 flex items-center bg-transparent z-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+                    >
+                      <a
+                        href="#"
+                        class="flex items-center justify-center w-full py-[1.14em] bg-[#26c] text-white text-[1.4rem] font-bold leading-[1.2] tracking-[-0.025em] uppercase btn-product btn-quickview"
+                        title="Quick View"
+                        >Quick View</a
+                      >
+                    </div>
+                  </figure>
+
+                  <!-- Product Details -->
+                  <div class="product-details pt-6">
+                    <div
+                      class="mb-2 text-[1rem] font-normal leading-[1] uppercase"
+                    >
+                      <a href="shop-classic-filter.html">Clothing</a>
+                    </div>
+                    <h3
+                      class="text-[1.4rem] font-normal tracking-[-0.01em] text-[#666] mb-[0.3rem]"
+                    >
+                      <a href="product.html">Coast Pool Comfort Jacket</a>
+                    </h3>
+                    <div
+                      class="text-[1.6rem] font-semibold leading-[1.86] text-[#222] truncate block"
+                    >
+                      <ins class="mr-4 no-underline">$199.00</ins>
+                      <del class="text-[#aaa]">$210.00</del>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex items-center space-x-1">
+                            <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                            <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                            <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                            <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                            <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                          </div>
+                      <a
+                        href="product.html"
+                        class="ml-4 my-0.5 whitespace-nowrap overflow-hidden text-ellipsis text-[1.1rem] text-[#aaa] tracking-[0] capitalize"
+                        >( 6 reviews )</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-8 px-2">
+                <div class="product group relative">
+                  <figure class="product-media relative">
+                    <a href="product.html">
+                      <img
+                        src="images/shop/13.jpg"
+                        alt="product"
+                        width="280"
+                        height="315"
+                      />
+                    </a>
+
+                    <!-- Label -->
+                    <div
+                      class="flex flex-col absolute left-8 top-8 max-w-[10rem]"
+                    >
+                      <label
+                        class="inline-block text-center mb-2 py-[0.2rem] px-[1.1rem] text-[1.1rem] rounded-[2px] font-semibold text-white uppercase bg-[#26c]"
+                        >new</label
+                      >
+                    </div>
+
+                    <!-- Action Buttons on Hover -->
+                    <div
+                      class="absolute top-[15px] right-[15px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity transition-[visibility] duration-300"
+                    >
+                      <a
+                        href="#"
+                        class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-[#e1e1e1] rounded-full bg-white text-[#999] text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-cart"
+                        data-toggle="modal"
+                        data-target="#addCartModal"
+                        title="Add to cart"
+                      >
+                        <i class="d-icon-bag"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-[#e1e1e1] rounded-full bg-white text-[#999] text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-wishlist"
+                        title="Add to wishlist"
+                      >
+                        <i class="d-icon-heart"></i>
+                      </a>
+                    </div>
+
+                    <!-- Quick View Button -->
+                    <div
+                      class="absolute left-0 right-0 bottom-0 flex items-center bg-transparent z-10 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+                    >
+                      <a
+                        href="#"
+                        class="flex items-center justify-center w-full py-[1.14em] bg-[#26c] text-white text-[1.4rem] font-bold leading-[1.2] tracking-[-0.025em] uppercase btn-product btn-quickview"
+                        title="Quick View"
+                        >Quick View</a
+                      >
+                    </div>
+                  </figure>
+
+                  <!-- Product Details -->
+                  <div class="product-details pt-6">
+                    <div
+                      class="mb-2 text-[1rem] font-normal leading-[1] uppercase"
+                    >
+                      <a href="shop-classic-filter.html">Clothing</a>
+                    </div>
+                    <h3
+                      class="text-[1.4rem] font-normal tracking-[-0.01em] text-[#666] mb-[0.3rem]"
+                    >
+                      <a href="product.html">Coast Pool Comfort Jacket</a>
+                    </h3>
+                    <div
+                      class="text-[1.6rem] font-semibold leading-[1.86] text-[#222] truncate block"
+                    >
+                      <ins class="mr-4 no-underline">$199.00</ins>
+                      <del class="text-[#aaa]">$210.00</del>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex items-center space-x-1">
+                            <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                            <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                            <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                            <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                            <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
+                          </div>
+                      <a
+                        href="product.html"
+                        class="ml-4 my-0.5 whitespace-nowrap overflow-hidden text-ellipsis text-[1.1rem] text-[#aaa] tracking-[0] capitalize"
+                        >( 6 reviews )</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+      <!-- Background of PhotoSwipe. It's a separate element as animating opacity is faster than rgba(). -->
+      <div class="pswp__bg"></div>
+
+      <!-- Slides wrapper with overflow:hidden. -->
+      <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides.
+			PhotoSwipe keeps only 3 of them in the DOM to save memory.
+			Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <!--  Controls are self-explanatory. Order can be changed. -->
+
+            <div class="pswp__counter"></div>
+
+            <button
+              class="pswp__button pswp__button--close"
+              aria-label="Close (Esc)"
+            ></button>
+            <button
+              class="pswp__button pswp__button--zoom"
+              aria-label="Zoom in/out"
+            ></button>
+
+            <div class="pswp__preloader">
+              <div class="loading-spin"></div>
+            </div>
+          </div>
+
+          <div
+            class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"
+          >
+            <div class="pswp__share-tooltip"></div>
+          </div>
+
+          <button
+            class="pswp__button--arrow--left"
+            aria-label="Previous (arrow left)"
+          ></button>
+          <button
+            class="pswp__button--arrow--right"
+            aria-label="Next (arrow right)"
+          ></button>
+
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Plugins JS File -->
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/sticky/sticky.min.js"></script>
+    <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+    <script src="vendor/elevatezoom/jquery.elevatezoom.min.js"></script>
+    <script src="vendor/photoswipe/photoswipe.min.js"></script>
+    <script src="vendor/photoswipe/photoswipe-ui-default.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

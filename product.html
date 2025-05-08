@@ -22,176 +22,6 @@
     />
 
     <link rel="stylesheet" type="text/css" href="css/output.css">
-    <style>
-      html {
-        font-size: 62.5%;
-        font-size-adjust: 100%;
-        font-weight: 400;
-        box-sizing: border-box;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      }
-      body {
-        margin: 0;
-        overflow-x: hidden;
-        font-family: Poppins, sans-serif;
-        font-size: 1.4rem;
-        line-height: 1.6;
-        color: #666;
-      }
-      .product-gallery {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 3rem;
-        position: sticky;
-      }
-      .product-single-carousel,
-      .product-thumbs-wrap {
-        flex-basis: 100%;
-        max-width: 100%;
-      }
-      .product-thumbs-wrap {
-        position: relative;
-        margin-top: 1rem;
-        overflow: hidden;
-      }
-      .product-thumb.active:before {
-        border-color: #26c;
-      }
-      .product-thumb:before {
-        content: "";
-        transition: border-color 0.3s;
-        border: 2px solid transparent;
-      }
-      .product-thumb:before,
-      .product-thumbs-wrap button {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        justify-content: center;
-        align-items: center;
-      }
-      .product-thumbs-wrap:hover button:not(.disabled) {
-        opacity: 0.9;
-        transform: none;
-      }
-      @media (min-width: 992px) {
-        .pg-vertical .product-thumbs-wrap {
-          order: -1;
-          max-width: 109px;
-          margin: 0 1rem 0 0;
-        }
-        .pg-vertical .product-single-carousel {
-          max-width: calc(100% - 119px);
-        }
-        .pg-vertical .product-thumbs {
-          display: block;
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-        }
-        .pg-vertical .product-thumb {
-          margin: 0 0 1rem;
-        }
-        .pg-vertical .thumb-down,
-        .pg-vertical .thumb-up {
-          display: flex;
-          width: 100%;
-          height: 2.4rem;
-        }
-        .pg-vertical .thumb-up {
-          transform: translateY(-100%);
-        }
-        .pg-vertical .thumb-up i:before {
-          content: "";
-        }
-        .pg-vertical .thumb-down {
-          top: auto;
-          transform: translateY(100%);
-        }
-        .pg-vertical .thumb-down i:before {
-          content: "";
-        }
-        .pg-vertical .product-label-group {
-          left: 14rem;
-        }
-      }
-      @media (min-width: 1600px) {
-        .container-fluid .product-thumbs.owl-carousel {
-          width: calc(100% + 20px);
-          margin: 0 -10px;
-        }
-        .container-fluid .product-thumb {
-          margin: 0 10px;
-        }
-        .container-fluid .product-thumbs-wrap {
-          margin-top: 20px;
-        }
-        .container-fluid .product-thumbs .owl-prev {
-          left: 10px;
-        }
-        .container-fluid .product-thumbs .owl-next {
-          right: 10px;
-        }
-        .container-fluid .pg-vertical .product-thumb {
-          margin: 0 0 20px;
-        }
-        .container-fluid .pg-vertical .product-thumbs-wrap {
-          margin: 0 20px 0 0;
-        }
-        .container-fluid .pg-vertical .product-single-carousel {
-          max-width: calc(100% - 129px);
-        }
-      }
-      .tab-nav-simple .nav-item .nav-link.active,
-.tab-nav-simple .nav-item.show .nav-link,
-.tab-nav-simple .nav-item:hover .nav-link {
-    border-bottom-color: #26c
-}
-
-.tab-content>.tab-pane {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: 0 !important;
-    opacity: 0;
-    z-index: -1;
-    transition: visibility 0.3s, opacity 0.3s
-}
-
-.tab-content>.tab-pane:not(.active) {
-    overflow: hidden;
-    visibility: hidden
-}
-
-.tab-content>.active {
-    position: relative;
-    height: auto !important;
-    opacity: 1;
-    z-index: auto
-}
-    </style>
-
-    <script>
-      WebFontConfig = {
-        google: {
-          families: ["Poppins:400,500,600,700"],
-        },
-      };
-      (function (d) {
-        var wf = d.createElement("script"),
-          s = d.scripts[0];
-        wf.src = "js/webfont.js";
-        wf.async = true;
-        s.parentNode.insertBefore(wf, s);
-      })(document);
-    </script>
-
     <link
       rel="stylesheet"
       type="text/css"
@@ -239,7 +69,7 @@
     <div class="page-wrapper">
         <header class="header">
             <div
-              class="border-b border-[#e1e1e1] text-[1.2rem] tracking-[-0.025em]"
+              class="border-b border-lightGray text-[1.2rem] tracking-[-0.025em]"
             >
               <div class="max-w-[1220px] mx-auto w-full px-5 flex">
                 <div class="flex">
@@ -271,7 +101,7 @@
                   </div>
                   <!-- End DropDown Menu -->
                   <span
-                    class="inline-block align-middle ml-6 h-10 w-px bg-[#e1e1e1]"
+                    class="inline-block align-middle ml-6 h-10 w-px bg-lightGray"
                   ></span>
                   <a href="contact-us.html" class="ml-9 flex items-center gap-2.5"
                     ><i class="fas fa-map-marked-alt"></i>Contact</a
@@ -747,7 +577,7 @@
                 <div class="header-left">
                   <nav class="main-nav">
                     <ul class="menu">
-                      <li class="active text-primary">
+                      <li class="text-primary">
                         <a href="index.html">Home</a>
                       </li>
                       <li class="text-dark">
@@ -913,8 +743,8 @@
                           </div>
                         </div>
                       </li>
-                      <li class="text-dark">
-                        <a href="index-product.html">Products</a>
+                      <li class="active text-dark">
+                        <a href="product.html">Products</a>
                         <div class="megamenu">
                           <div class="row">
                             <div class="col-6 col-sm-4 col-md-3">
@@ -1422,7 +1252,7 @@
                     class="flex flex-col absolute left-56 z-10 top-8 max-w-[10rem]"
                   >
                     <label
-                      class="inline-block text-center mb-2 py-[0.2rem] px-[1.1rem] text-[1.1rem] rounded-[2px] font-semibold text-white uppercase bg-[#26c]"
+                      class="inline-block text-center mb-2 py-[0.2rem] px-[1.1rem] text-[1.1rem] rounded-[2px] font-semibold text-white uppercase bg-secondary"
                       >new</label
                     >
                   </div>
@@ -1509,15 +1339,15 @@
                   <div class="block mb-[1.1rem] text-[#d26e4b] text-[3rem] font-bold tracking-[-0.025em] leading-none">$113.00</div>
                   <div class="flex mb-7">
                     <div class="flex items-center space-x-1">
-                        <i class="fas fa-star text-[#666]"></i>
-                        <i class="fas fa-star text-[#666]0"></i>
-                        <i class="fas fa-star text-[#666]"></i>
+                        <i class="fas fa-star text-body"></i>
+                        <i class="fas fa-star text-body0"></i>
+                        <i class="fas fa-star text-body"></i>
                         <i class="fas fa-star text-gray-300"></i>
                         <i class="fas fa-star text-gray-300"></i>
                       </div>
                       <a
                       href="#product-tab-reviews"
-                      class="ml-4 text-[1.2rem] text-[#999]"
+                      class="ml-4 text-[1.2rem] text-light"
                     >
                       ( 11 reviews )
                     </a>     
@@ -1528,7 +1358,7 @@
                     liberpuro ate vol faucibus adipiscing.
                   </p>
                   <div class="product-variations flex items-start leading-[37px] mb-4">
-                    <label class="min-w-[7rem] mb-4 capitalize text-[16px] font-normal tracking-[-0.025em] text-[#222]">Color:</label>
+                    <label class="min-w-[7rem] mb-4 capitalize text-[16px] font-normal tracking-[-0.025em] text-dark">Color:</label>
                     <div class="">
                       <select name="color" class="w-[20rem] text-[1.3rem] max-w-none p-[0.8rem] pr-[3rem] pl-[1.4rem] text-[#222222] border border-[#d7d7d7] rounded-[2px] leading-[1.5] font-normal shadow-none outline-none">
                         <option value="" selected="selected">
@@ -1544,7 +1374,7 @@
                     </div>
                   </div>
                   <div class="product-variations flex items-start leading-[37px] mb-4">
-                    <label class="min-w-[7rem] mb-4 capitalize text-[16px] font-normal tracking-[-0.025em] text-[#222]">Size:</label>
+                    <label class="min-w-[7rem] mb-4 capitalize text-[16px] font-normal tracking-[-0.025em] text-dark">Size:</label>
                     <div class="relative flex items-start flex-wrap flex-1">
                       <div class="">
                         <select name="size" class="w-[20rem] text-[1.3rem] max-w-none p-[0.8rem] pr-[3rem] pl-[1.4rem] text-[#222222] border border-[#d7d7d7] rounded-[2px] leading-[1.5] font-normal shadow-none outline-none">
@@ -1585,7 +1415,7 @@
                       </div>
                       <button
                       class="btn-product btn-cart leading-[2.9] px-[0.6em] py-0 text-center whitespace-nowrap overflow-hidden text-ellipsis 
-                             text-white disabled:!text-[#999]
+                             text-white disabled:!text-light
                              border-[#ccc] mr-[5px] rounded-[0.3rem] max-w-[20.7rem] h-[4.5rem] border-0 flex-1 min-w-[13rem] 
                              text-[1.4rem] 
                              disabled:bg-[#e4eaec] disabled:cursor-not-allowed 
@@ -1612,7 +1442,7 @@
                         class="m-[2px] mr-[8px] w-[30px] h-[30px] leading-[28px] text-[1.5rem] rounded-full text-inherit text-center transition-colors transition-border transition-bg duration-[400ms] social-pinterest fab fa-pinterest-p"
                       ></a>
                     </div>
-                    <span class="ml-[-1rem] mr-[1.8rem] h-[2.5rem] w-[1px] bg-[#e1e1e1]"></span>
+                    <span class="ml-[-1rem] mr-[1.8rem] h-[2.5rem] w-[1px] bg-lightGray"></span>
                     <a href="#" class="inline-block py-[0.5rem] font-normal text-[1.4rem] bg-transparent transition-colors duration-300 normal-case text-[#666666] mr-12"
                       ><i class="far fa-heart mr-4 text-2xl"></i>Add to wishlist</a
                     >
@@ -1727,7 +1557,7 @@
                           alt="Product"
                         />
                         <a
-                          class="flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 items-center justify-center p-0 text-[35px] w-[78px] h-[78px] rounded-full bg-[#222] shadow-[0_5px_10px_rgba(0,0,0,0.2)] text-white"
+                          class="flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 items-center justify-center p-0 text-[35px] w-[78px] h-[78px] rounded-full bg-dark shadow-[0_5px_10px_rgba(0,0,0,0.2)] text-white"
                           href="video/memory-of-a-woman.mp4"
                         >
                           <i class="fas fa-play"></i>
@@ -1746,10 +1576,10 @@
                             >
                               2 year warranty
                             </h4>
-                            <p class="text-[1.3rem] text-[#999] leading-[1.72] mb-0">Guarantee with no doubt</p>
+                            <p class="text-[1.3rem] text-light leading-[1.72] mb-0">Guarantee with no doubt</p>
                           </div>
                         </div>
-                        <div class="my-[1.3rem] h-[4.4rem] mr-[3rem] w-[1px] bg-[#e1e1e1]"></div>
+                        <div class="my-[1.3rem] h-[4.4rem] mr-[3rem] w-[1px] bg-lightGray"></div>
                         <div
                           class="icon-box flex items-center justify-center icon-border pt-2 pb-2 mb-8"
                         >
@@ -1762,7 +1592,7 @@
                             >
                               Free shipping
                             </h4>
-                            <p class="text-[1.3rem] text-[#999] leading-[1.72] mb-0">On orders over $50.00</p>
+                            <p class="text-[1.3rem] text-light leading-[1.72] mb-0">On orders over $50.00</p>
                           </div>
                         </div>
                       </div>
@@ -1772,15 +1602,15 @@
                 <div class="tab-pane" id="product-tab-additional">
                   <ul class="list-none">
                     <li>
-                      <label class="inline-block min-w-[20rem] text-[#222]">Brands:</label>
+                      <label class="inline-block min-w-[20rem] text-dark">Brands:</label>
                       <p>SkillStar, SLS</p>
                     </li>
                     <li>
-                      <label class="inline-block min-w-[20rem] text-[#222]">Color:</label>
+                      <label class="inline-block min-w-[20rem] text-dark">Color:</label>
                       <p>Blue, Brown</p>
                     </li>
                     <li>
-                      <label class="inline-block min-w-[20rem] text-[#222]">Size:</label>
+                      <label class="inline-block min-w-[20rem] text-dark">Size:</label>
                       <p>Large, Medium, Small</p>
                     </li>
                   </ul>
@@ -1862,7 +1692,7 @@
                               </div>
                               <a
                               href="#product-tab-reviews"
-                              class="ml-4 text-[1.1rem] text-[#999] capitalize"
+                              class="ml-4 text-[1.1rem] text-light capitalize"
                             >
                               ( 2 reviews )
                             </a>     
@@ -1879,7 +1709,7 @@
                                 <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
                               </div>
                           <div class="bg-[#eee] h-[0.8rem] w-[20rem] max-w-full">
-                            <span class="block h-full rounded-inherit bg-[#999] rounded-full" style="width: 100%"></span>
+                            <span class="block h-full rounded-inherit bg-light rounded-full" style="width: 100%"></span>
                           </div>
                           <div class="ml-8">100%</div>
                         </div>
@@ -1892,7 +1722,7 @@
                                 <i class="fas fa-star text-[rgba(0,0,0,0.16)] text-[11px]"></i>
                               </div>
                           <div class="bg-[#eee] h-[0.8rem] w-[20rem] max-w-full">
-                            <span class="block h-full rounded-inherit bg-[#999] rounded-full" style="width: 0%"></span>
+                            <span class="block h-full rounded-inherit bg-light rounded-full" style="width: 0%"></span>
                           </div>
                           <div class="ml-8">0%</div>
                         </div>
@@ -1905,7 +1735,7 @@
                                 <i class="fas fa-star text-[rgba(0,0,0,0.16)] text-[11px]"></i>
                               </div>
                           <div class="bg-[#eee] h-[0.8rem] w-[20rem] max-w-full">
-                            <span class="block h-full rounded-inherit bg-[#999] rounded-full" style="width: 0%"></span>
+                            <span class="block h-full rounded-inherit bg-light rounded-full" style="width: 0%"></span>
                           </div>
                           <div class="ml-8">0%</div>
                         </div>
@@ -1918,7 +1748,7 @@
                                 <i class="fas fa-star text-[rgba(0,0,0,0.16)] text-[11px]"></i>
                               </div>
                           <div class="bg-[#eee] h-[0.8rem] w-[20rem] max-w-full">
-                            <span class="block h-full rounded-inherit bg-[#999] rounded-full" style="width: 0%"></span>
+                            <span class="block h-full rounded-inherit bg-light rounded-full" style="width: 0%"></span>
                           </div>
                           <div class="ml-8">0%</div>
                         </div>
@@ -1931,32 +1761,32 @@
                                 <i class="fas fa-star text-[rgba(0,0,0,0.16)] text-[11px]"></i>
                               </div>
                           <div class="bg-[#eee] h-[0.8rem] w-[20rem] max-w-full">
-                            <span class="block h-full rounded-inherit bg-[#999] rounded-full" style="width: 0%"></span>
+                            <span class="block h-full rounded-inherit bg-light rounded-full" style="width: 0%"></span>
                           </div>
                           <div class="ml-8">0%</div>
                         </div>
                       </div>
                       <a
-                        class="btn btn-dark btn-rounded inline-flex items-center justify-center border-2 border-[#222] bg-[#222] text-white outline-none py-7 px-16 font-bold text-[1.4rem] leading-[1.2] uppercase text-center whitespace-nowrap cursor-pointer transition-colors duration-300 ease-in-out rounded-[3px] hover:bg-[#3a3a3a]"
+                        class="btn btn-dark btn-rounded inline-flex items-center justify-center border-2 border-dark bg-dark text-white outline-none py-7 px-16 font-bold text-[1.4rem] leading-[1.2] uppercase text-center whitespace-nowrap cursor-pointer transition-colors duration-300 ease-in-out rounded-[3px] hover:bg-[#3a3a3a]"
                         href="#"
                         >Submit Review</a
                       >
                     </div>
                     <div class="w-full lg:w-2/3 comments pt-4 pb-20 p-4">
-                      <nav class="flex items-center flex-wrap relative z-21 justify-between pb-4 mb-12 border-b border-[#e1e1e1] transition-all duration-400">
+                      <nav class="flex items-center flex-wrap relative z-21 justify-between pb-4 mb-12 border-b border-lightGray transition-all duration-400">
                         <div class="flex items-center flex-wrap">
                           <div class="mr-7 mb-4 flex-nowrap">
-                            <a href="#" class="text-lg px-[1.08em] py-[0.82em] rounded-[3px] border-2 border-[#e4eaec] text-[#666] font-bold tracking-normal leading-[1.2] uppercase text-center transition-colors duration-300 cursor-pointer whitespace-nowrap"
+                            <a href="#" class="text-lg px-[1.08em] py-[0.82em] rounded-[3px] border-2 border-[#e4eaec] text-body font-bold tracking-normal leading-[1.2] uppercase text-center transition-colors duration-300 cursor-pointer whitespace-nowrap"
                               >All Reviews</a
                             >
                           </div>
                           <div class="mr-7 mb-4 flex-nowrap">
-                            <a href="#" class="text-lg px-[1.08em] py-[0.82em] rounded-[3px] border-2 border-[#e4eaec] text-[#666] font-bold tracking-normal leading-[1.2] uppercase text-center transition-colors duration-300 cursor-pointer whitespace-nowrap"
+                            <a href="#" class="text-lg px-[1.08em] py-[0.82em] rounded-[3px] border-2 border-[#e4eaec] text-body font-bold tracking-normal leading-[1.2] uppercase text-center transition-colors duration-300 cursor-pointer whitespace-nowrap"
                               >With Images</a
                             >
                           </div>
                           <div class="mb-4 flex-nowrap">
-                            <a href="#" class="text-lg px-[1.08em] py-[0.82em] rounded-[3px] border-2 border-[#e4eaec] text-[#666] font-bold tracking-normal leading-[1.2] uppercase text-center transition-colors duration-300 cursor-pointer whitespace-nowrap"
+                            <a href="#" class="text-lg px-[1.08em] py-[0.82em] rounded-[3px] border-2 border-[#e4eaec] text-body font-bold tracking-normal leading-[1.2] uppercase text-center transition-colors duration-300 cursor-pointer whitespace-nowrap"
                               >With Videos</a
                             >
                           </div>
@@ -1965,7 +1795,7 @@
                           <div
                             class="mb-4 flex flex-nowrap items-center toolbox-sort select-box text-dark"
                           >
-                            <label class="hidden md:block mr-[0.8rem] font-semibold uppercase text-[#222]">Sort By :</label>
+                            <label class="hidden md:block mr-[0.8rem] font-semibold uppercase text-dark">Sort By :</label>
                             <select name="orderby" class="text-[1.3rem] min-w-[15rem] max-w-[15rem] p-[0.8rem] pl-[1.4rem] text-[#222222] border border-[#d7d7d7] rounded-[2px] leading-[1.5] font-normal shadow-none outline-none">
                               <option value="">Default Order</option>
                               <option value="newest" selected="selected">
@@ -1983,7 +1813,7 @@
                         </div>
                       </nav>
                       <ul class="">
-                        <li class="pb-[3rem] mb-[3rem] border-b border-[#e1e1e1]">
+                        <li class="pb-[3rem] mb-[3rem] border-b border-lightGray">
                           <div class="flex items-start relative ">
                             <figure class="max-w-[6rem] flex-[0_0_6rem] h-[6rem] overflow-hidden">
                               <a href="#">
@@ -2003,7 +1833,7 @@
                                     <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
                                   </div>
                               <div class="mb-4">
-                                <span class="block mb-[0.5rem] text-[1.3rem] text-[#999] leading-none"
+                                <span class="block mb-[0.5rem] text-[1.3rem] text-light leading-none"
                                   >by
                                   <span
                                     class="font-semibold uppercase text-dark"
@@ -2056,13 +1886,13 @@
                               </div>
                               <div class="feeling mt-10">
                                 <button
-                                  class="btn btn-link btn-icon-left btn-slide-up btn-infinite like font-bold text-[#222] mr-4"
+                                  class="btn btn-link btn-icon-left btn-slide-up btn-infinite like font-bold text-dark mr-4"
                                 >
                                   <i class="fa fa-thumbs-up"></i>
                                   Like (<span class="count">0</span>)
                                 </button>
                                 <button
-                                  class="btn btn-link btn-icon-left btn-slide-down btn-infinite unlike font-bold text-[#222]"
+                                  class="btn btn-link btn-icon-left btn-slide-down btn-infinite unlike font-bold text-dark"
                                 >
                                   <i class="fa fa-thumbs-down"></i>
                                   Unlike (<span class="count">0</span>)
@@ -2071,7 +1901,7 @@
                             </div>
                           </div>
                         </li>
-                        <li class="pb-[3rem] mb-[3rem] border-b border-[#e1e1e1]">
+                        <li class="pb-[3rem] mb-[3rem] border-b border-lightGray">
                             <div class="flex items-start relative ">
                               <figure class="max-w-[6rem] flex-[0_0_6rem] h-[6rem] overflow-hidden">
                                 <a href="#">
@@ -2091,7 +1921,7 @@
                                       <i class="fas fa-star text-[#d26e4b] text-[11px]"></i>
                                     </div>
                                 <div class="mb-4">
-                                  <span class="block mb-[0.5rem] text-[1.3rem] text-[#999] leading-none"
+                                  <span class="block mb-[0.5rem] text-[1.3rem] text-light leading-none"
                                     >by
                                     <span
                                       class="font-semibold uppercase text-dark"
@@ -2144,13 +1974,13 @@
                                 </div>
                                 <div class="feeling mt-10">
                                   <button
-                                    class="btn btn-link btn-icon-left btn-slide-up btn-infinite like font-bold text-[#222] mr-4"
+                                    class="btn btn-link btn-icon-left btn-slide-up btn-infinite like font-bold text-dark mr-4"
                                   >
                                     <i class="fa fa-thumbs-up"></i>
                                     Like (<span class="count">0</span>)
                                   </button>
                                   <button
-                                    class="btn btn-link btn-icon-left btn-slide-down btn-infinite unlike font-bold text-[#222]"
+                                    class="btn btn-link btn-icon-left btn-slide-down btn-infinite unlike font-bold text-dark"
                                   >
                                     <i class="fa fa-thumbs-down"></i>
                                     Unlike (<span class="count">0</span>)
@@ -2205,7 +2035,7 @@
             </div>
 
             <section class="pt-6 mt-20">
-              <h2 class="title title-center w-full flex justify-center items-center text-center mx-auto mb-10 capitalize text-[3rem] font-bold leading-[1] tracking-[-0.0125em] text-[#222] text-4xl">Related Products</h2>
+              <h2 class="title title-center w-full flex justify-center items-center text-center mx-auto mb-10 capitalize text-[3rem] font-bold leading-[1] tracking-[-0.0125em] text-dark text-4xl">Related Products</h2>
 
               <div
                 class="owl-carousel owl-theme owl-nav-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
@@ -2247,7 +2077,7 @@
                       class="flex flex-col absolute left-8 top-8 max-w-[10rem]"
                     >
                       <label
-                        class="inline-block text-center mb-2 py-[0.2rem] px-[1.1rem] text-[1.1rem] rounded-[2px] font-semibold text-white uppercase bg-[#26c]"
+                        class="inline-block text-center mb-2 py-[0.2rem] px-[1.1rem] text-[1.1rem] rounded-[2px] font-semibold text-white uppercase bg-secondary"
                         >new</label
                       >
                     </div>
@@ -2258,7 +2088,7 @@
                     >
                       <a
                         href="#"
-                        class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-[#e1e1e1] rounded-full bg-white text-[#999] text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-cart"
+                        class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-lightGray rounded-full bg-white text-light text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-cart"
                         data-toggle="modal"
                         data-target="#addCartModal"
                         title="Add to cart"
@@ -2267,7 +2097,7 @@
                       </a>
                       <a
                         href="#"
-                        class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-[#e1e1e1] rounded-full bg-white text-[#999] text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-wishlist"
+                        class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-lightGray rounded-full bg-white text-light text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-wishlist"
                         title="Add to wishlist"
                       >
                         <i class="d-icon-heart"></i>
@@ -2280,7 +2110,7 @@
                     >
                       <a
                         href="#"
-                        class="flex items-center justify-center w-full py-[1.14em] bg-[#26c] text-white text-[1.4rem] font-bold leading-[1.2] tracking-[-0.025em] uppercase btn-product btn-quickview"
+                        class="flex items-center justify-center w-full py-[1.14em] bg-secondary text-white text-[1.4rem] font-bold leading-[1.2] tracking-[-0.025em] uppercase btn-product btn-quickview"
                         title="Quick View"
                         >Quick View</a
                       >
@@ -2295,12 +2125,12 @@
                       <a href="shop-classic-filter.html">Clothing</a>
                     </div>
                     <h3
-                      class="text-[1.4rem] font-normal tracking-[-0.01em] text-[#666] mb-[0.3rem]"
+                      class="text-[1.4rem] font-normal tracking-[-0.01em] text-body mb-[0.3rem]"
                     >
                       <a href="product.html">Coast Pool Comfort Jacket</a>
                     </h3>
                     <div
-                      class="text-[1.6rem] font-semibold leading-[1.86] text-[#222] truncate block"
+                      class="text-[1.6rem] font-semibold leading-[1.86] text-dark truncate block"
                     >
                       <ins class="mr-4 no-underline">$199.00</ins>
                       <del class="text-[#aaa]">$210.00</del>
@@ -2350,7 +2180,7 @@
                     >
                       <a
                         href="#"
-                        class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-[#e1e1e1] rounded-full bg-white text-[#999] text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-cart"
+                        class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-lightGray rounded-full bg-white text-light text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-cart"
                         data-toggle="modal"
                         data-target="#addCartModal"
                         title="Add to cart"
@@ -2359,7 +2189,7 @@
                       </a>
                       <a
                         href="#"
-                        class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-[#e1e1e1] rounded-full bg-white text-[#999] text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-wishlist"
+                        class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-lightGray rounded-full bg-white text-light text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-wishlist"
                         title="Add to wishlist"
                       >
                         <i class="d-icon-heart"></i>
@@ -2372,7 +2202,7 @@
                     >
                       <a
                         href="#"
-                        class="flex items-center justify-center w-full py-[1.14em] bg-[#26c] text-white text-[1.4rem] font-bold leading-[1.2] tracking-[-0.025em] uppercase btn-product btn-quickview"
+                        class="flex items-center justify-center w-full py-[1.14em] bg-secondary text-white text-[1.4rem] font-bold leading-[1.2] tracking-[-0.025em] uppercase btn-product btn-quickview"
                         title="Quick View"
                         >Quick View</a
                       >
@@ -2387,12 +2217,12 @@
                       <a href="shop-classic-filter.html">Clothing</a>
                     </div>
                     <h3
-                      class="text-[1.4rem] font-normal tracking-[-0.01em] text-[#666] mb-[0.3rem]"
+                      class="text-[1.4rem] font-normal tracking-[-0.01em] text-body mb-[0.3rem]"
                     >
                       <a href="product.html">Coast Pool Comfort Jacket</a>
                     </h3>
                     <div
-                      class="text-[1.6rem] font-semibold leading-[1.86] text-[#222] truncate block"
+                      class="text-[1.6rem] font-semibold leading-[1.86] text-dark truncate block"
                     >
                       <ins class="mr-4 no-underline">$19.00</ins>
                     </div>
@@ -2430,7 +2260,7 @@
                       class="flex flex-col absolute left-8 top-8 max-w-[10rem]"
                     >
                       <label
-                        class="inline-block text-center mb-2 py-[0.2rem] px-[1.1rem] text-[1.1rem] rounded-[2px] font-semibold text-white uppercase bg-[#26c]"
+                        class="inline-block text-center mb-2 py-[0.2rem] px-[1.1rem] text-[1.1rem] rounded-[2px] font-semibold text-white uppercase bg-secondary"
                         >new</label
                       >
                     </div>
@@ -2441,7 +2271,7 @@
                     >
                       <a
                         href="#"
-                        class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-[#e1e1e1] rounded-full bg-white text-[#999] text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-cart"
+                        class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-lightGray rounded-full bg-white text-light text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-cart"
                         data-toggle="modal"
                         data-target="#addCartModal"
                         title="Add to cart"
@@ -2450,7 +2280,7 @@
                       </a>
                       <a
                         href="#"
-                        class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-[#e1e1e1] rounded-full bg-white text-[#999] text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-wishlist"
+                        class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-lightGray rounded-full bg-white text-light text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-wishlist"
                         title="Add to wishlist"
                       >
                         <i class="d-icon-heart"></i>
@@ -2463,7 +2293,7 @@
                     >
                       <a
                         href="#"
-                        class="flex items-center justify-center w-full py-[1.14em] bg-[#26c] text-white text-[1.4rem] font-bold leading-[1.2] tracking-[-0.025em] uppercase btn-product btn-quickview"
+                        class="flex items-center justify-center w-full py-[1.14em] bg-secondary text-white text-[1.4rem] font-bold leading-[1.2] tracking-[-0.025em] uppercase btn-product btn-quickview"
                         title="Quick View"
                         >Quick View</a
                       >
@@ -2478,12 +2308,12 @@
                       <a href="shop-classic-filter.html">Clothing</a>
                     </div>
                     <h3
-                      class="text-[1.4rem] font-normal tracking-[-0.01em] text-[#666] mb-[0.3rem]"
+                      class="text-[1.4rem] font-normal tracking-[-0.01em] text-body mb-[0.3rem]"
                     >
                       <a href="product.html">Coast Pool Comfort Jacket</a>
                     </h3>
                     <div
-                      class="text-[1.6rem] font-semibold leading-[1.86] text-[#222] truncate block"
+                      class="text-[1.6rem] font-semibold leading-[1.86] text-dark truncate block"
                     >
                       <ins class="mr-4 no-underline">$199.00</ins>
                       <del class="text-[#aaa]">$210.00</del>
@@ -2522,7 +2352,7 @@
                       class="flex flex-col absolute left-8 top-8 max-w-[10rem]"
                     >
                       <label
-                        class="inline-block text-center mb-2 py-[0.2rem] px-[1.1rem] text-[1.1rem] rounded-[2px] font-semibold text-white uppercase bg-[#26c]"
+                        class="inline-block text-center mb-2 py-[0.2rem] px-[1.1rem] text-[1.1rem] rounded-[2px] font-semibold text-white uppercase bg-secondary"
                         >new</label
                       >
                     </div>
@@ -2533,7 +2363,7 @@
                     >
                       <a
                         href="#"
-                        class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-[#e1e1e1] rounded-full bg-white text-[#999] text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-cart"
+                        class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-lightGray rounded-full bg-white text-light text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-cart"
                         data-toggle="modal"
                         data-target="#addCartModal"
                         title="Add to cart"
@@ -2542,7 +2372,7 @@
                       </a>
                       <a
                         href="#"
-                        class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-[#e1e1e1] rounded-full bg-white text-[#999] text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-wishlist"
+                        class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-lightGray rounded-full bg-white text-light text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-wishlist"
                         title="Add to wishlist"
                       >
                         <i class="d-icon-heart"></i>
@@ -2555,7 +2385,7 @@
                     >
                       <a
                         href="#"
-                        class="flex items-center justify-center w-full py-[1.14em] bg-[#26c] text-white text-[1.4rem] font-bold leading-[1.2] tracking-[-0.025em] uppercase btn-product btn-quickview"
+                        class="flex items-center justify-center w-full py-[1.14em] bg-secondary text-white text-[1.4rem] font-bold leading-[1.2] tracking-[-0.025em] uppercase btn-product btn-quickview"
                         title="Quick View"
                         >Quick View</a
                       >
@@ -2570,12 +2400,12 @@
                       <a href="shop-classic-filter.html">Clothing</a>
                     </div>
                     <h3
-                      class="text-[1.4rem] font-normal tracking-[-0.01em] text-[#666] mb-[0.3rem]"
+                      class="text-[1.4rem] font-normal tracking-[-0.01em] text-body mb-[0.3rem]"
                     >
                       <a href="product.html">Coast Pool Comfort Jacket</a>
                     </h3>
                     <div
-                      class="text-[1.6rem] font-semibold leading-[1.86] text-[#222] truncate block"
+                      class="text-[1.6rem] font-semibold leading-[1.86] text-dark truncate block"
                     >
                       <ins class="mr-4 no-underline">$199.00</ins>
                       <del class="text-[#aaa]">$210.00</del>
@@ -2604,7 +2434,7 @@
       </main>
                   <!-- End of Main -->
                   <footer
-                  class="appear-animate text-[1.3rem] bg-[#222]"
+                  class="appear-animate text-[1.3rem] bg-dark"
                   data-animation-options="{'name': 'fadeIn', 'duration': '1s'}"
                 >
                   <div class="max-w-[1220px] mx-auto w-full px-2.5">
@@ -2883,17 +2713,17 @@
                           <a
                             href="#"
                             title="social-link"
-                            class="tracking-[0.005em] text-light border-2 border-[#999] m-[2px] mr-[8px] w-[30px] h-[30px] leading-[28px] text-[1.5rem] rounded-full transition-colors duration-400 text-center social-facebook fab fa-facebook-f"
+                            class="tracking-[0.005em] text-light border-2 border-light m-[2px] mr-[8px] w-[30px] h-[30px] leading-[28px] text-[1.5rem] rounded-full transition-colors duration-400 text-center social-facebook fab fa-facebook-f"
                           ></a>
                           <a
                             href="#"
                             title="social-link"
-                            class="tracking-[0.005em] text-light border-2 border-[#999] m-[2px] mr-[8px] w-[30px] h-[30px] leading-[28px] text-[1.5rem] rounded-full transition-colors duration-400 text-center social-twitter fab fa-twitter"
+                            class="tracking-[0.005em] text-light border-2 border-light m-[2px] mr-[8px] w-[30px] h-[30px] leading-[28px] text-[1.5rem] rounded-full transition-colors duration-400 text-center social-twitter fab fa-twitter"
                           ></a>
                           <a
                             href="#"
                             title="social-link"
-                            class="tracking-[0.005em] text-light border-2 border-[#999] m-[2px] mr-[8px] w-[30px] h-[30px] leading-[28px] text-[1.5rem] rounded-full transition-colors duration-400 text-center social-linkedin fab fa-linkedin-in"
+                            class="tracking-[0.005em] text-light border-2 border-light m-[2px] mr-[8px] w-[30px] h-[30px] leading-[28px] text-[1.5rem] rounded-full transition-colors duration-400 text-center social-linkedin fab fa-linkedin-in"
                           ></a>
                         </div>
                       </div>

@@ -1151,6 +1151,10 @@ video {
   margin-top: 0.6rem;
 }
 
+.mr-\[3rem\] {
+  margin-right: 3rem;
+}
+
 .block {
   display: block;
 }
@@ -1667,6 +1671,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -3968,6 +3976,10 @@ video {
 
   .md\:flex-\[0_0_75\%\] {
     flex: 0 0 75%;
+  }
+
+  .md\:flex-\[0\.8rem\] {
+    flex: 0.8rem;
   }
 
   .md\:grid-cols-2 {

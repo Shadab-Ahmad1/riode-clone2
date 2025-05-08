@@ -5403,7 +5403,7 @@ ul.blog-filters .nav-filter {
     }
 }
 
-.comments {
+/* .comments {
     padding: 6rem 0;
     border-top: 1px solid #ebebeb;
 }
@@ -5421,7 +5421,7 @@ ul.blog-filters .nav-filter {
     border-bottom-width: 0;
     margin-bottom: 0;
     padding-bottom: 0;
-}
+} */
 
 @media (max-width: 575px) {
     .comments ul ul {
@@ -6293,11 +6293,6 @@ textarea {
     font-weight: 600;
     font-family: "Font Awesome 5 Free";
     text-align: center;
-}
-
-.select-box,
-.select-menu {
-    position: relative;
 }
 
 .select-box select,
@@ -8773,22 +8768,6 @@ button.mfp-arrow {
     position: static;
 }
 
-.product-details .btn-cart,
-.product-hide-details .btn-cart {
-    display: block;
-    max-width: 14rem;
-    line-height: 2.9;
-    padding: 0 0.6em;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: #222;
-    background-color: transparent;
-    border: 2px solid #ccc;
-    margin-right: 5px;
-    border-radius: 0.3rem;
-}
 
 .product-details .btn-cart i,
 .product-hide-details .btn-cart i {
@@ -9835,19 +9814,6 @@ aside+div .product-single .product-details {
     letter-spacing: -0.025em;
 }
 
-.product-variation-clean {
-    display: block;
-    position: absolute;
-    margin-top: 1rem;
-    padding: 0.3em 1em;
-    left: 0;
-    top: calc(100% - 10px);
-    font-size: 1rem;
-    line-height: 1.6;
-    background: #f4f4f4;
-    color: #000;
-}
-
 .related-products {
     margin-top: 6.5rem;
 }
@@ -10538,12 +10504,6 @@ aside+div .product-single .product-details {
     line-height: 1.72;
 }
 
-.tab-nav-simple .nav-link {
-    border-bottom: 2px solid transparent;
-    background-color: transparent;
-    color: #666;
-}
-
 .tab-nav-simple .nav-item .nav-link.active,
 .tab-nav-simple .nav-item.show .nav-link,
 .tab-nav-simple .nav-item:hover .nav-link {
@@ -11206,77 +11166,6 @@ aside+div .product-single .product-details {
 .header-right {
     margin-left: auto;
 }
-
-/* .header-right a {
-  display: flex;
-  align-items: center;
-} */
-
-/* .header-top {
-  border-bottom: 1px solid #e1e1e1;
-  font-size: 1.2rem;
-  letter-spacing: -0.025em;
-} */
-/* 
-.header-top .header-right > * {
-  margin-left: 2.3rem;
-} */
-
-/* .header-top .header-right > :first-child {
-  margin-left: 0;
-}
-
-.header-top .divider {
-  margin: 0 -0.3rem 0 2rem;
-} */
-
-/* .header-top .contact {
-  margin-right: 0.2rem;
-  line-height: 1;
-}
-
-.header-top .contact i {
-  margin-right: 0.7rem;
-  font-size: 1.7rem;
-}
-
-.header-top .help {
-  line-height: 1;
-}
-
-.header-top .help i {
-  margin-right: 0.7rem;
-  font-size: 1.7rem;
-} */
-
-/* .header-top .login-link,
-.header-top .login-toggle,
-.header-top .register-link,
-.header-top .register-toggle {
-  cursor: pointer;
-}
-
-.header-top .login-link i,
-.header-top .login-toggle i,
-.header-top .register-link i,
-.header-top .register-toggle i {
-  margin-right: 0.9rem;
-  font-size: 1.5rem;
-}
-
-.header-top .delimiter {
-  margin: 0 0.5rem;
-  color: #aaa;
-}
-
-.header-top .wishlist {
-  margin-right: 2rem;
-}
-
-.header-top .wishlist i {
-  margin-right: 0.6rem;
-  font-size: 1.7rem;
-} */
 
 .currency-dropdown a,
 .language-dropdown a {
@@ -14049,7 +13938,6 @@ aside+div .product-single .product-details {
 .toolbox {
     position: relative;
     z-index: 21;
-    justify-content: space-between;
 }
 
 .toolbox.toolbox-pagination {

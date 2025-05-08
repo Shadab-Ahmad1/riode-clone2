@@ -16,6 +16,20 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/icons/favicon.png" />
+        <script>
+      WebFontConfig = {
+        google: {
+          families: ["Poppins:400,500,600,700"],
+        },
+      };
+      (function (d) {
+        var wf = d.createElement("script"),
+          s = d.scripts[0];
+        wf.src = "js/webfont.js";
+        wf.async = true;
+        s.parentNode.insertBefore(wf, s);
+      })(document);
+    </script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -65,7 +79,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.min.css" />
   </head>
 
-  <body>
+  <body class="font-poppins">
     <div class="page-wrapper">
         <header class="header">
             <div
@@ -361,7 +375,7 @@
                         <a
                           href="#"
                           class="btn btn-dark btn-link btn-icon-right btn-close"
-                          >close<i class="d-icon-arrow-right"></i
+                          >close<i class="fas fa-arrow-right"></i
                           ><span class="sr-only">wishlist</span></a
                         >
                       </div>
@@ -469,7 +483,7 @@
                         <a
                           href="#"
                           class="btn btn-dark btn-link btn-icon-right btn-close"
-                          >close<i class="d-icon-arrow-right"></i
+                          >close<i class="fas fa-arrow-right"></i
                           ><span class="sr-only">Cart</span></a
                         >
                       </div>
@@ -735,7 +749,7 @@
                                   <span class="text-uppercase">Up to</span>70% Off
                                 </h3>
                                 <a href="#" class="btn btn-link btn-underline"
-                                  >shop now<i class="d-icon-arrow-right"></i
+                                  >shop now<i class="fas fa-arrow-right"></i
                                 ></a>
                               </div>
                             </div>
@@ -2002,7 +2016,7 @@
                               tabindex="-1"
                               aria-disabled="true"
                             >
-                              <i class="d-icon-arrow-left"></i>Prev
+                              <i class="fas fa-arrow-left"></i>Prev
                             </a>
                           </li>
                           <li class="page-item active" aria-current="page">
@@ -2023,7 +2037,7 @@
                               href="#"
                               aria-label="Next"
                             >
-                              Next<i class="d-icon-arrow-right"></i>
+                              Next<i class="fas fa-arrow-right"></i>
                             </a>
                           </li>
                         </ul>

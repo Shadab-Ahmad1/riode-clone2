@@ -74,21 +74,6 @@
     <link rel="stylesheet" type="text/css" href="css/style.min.css" />
     <link rel="stylesheet" type="text/css" href="css/output.css">
     <style>
-      html {
-        font-size: 62.5%;
-        font-size-adjust: 100%;
-        font-weight: 400;
-        box-sizing: border-box;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      }
-      body {
-        margin: 0;
-        overflow-x: hidden;
-        font-family: Poppins, sans-serif;
-        font-size: 1.4rem;
-        line-height: 1.6;
-        color: #666;
-      }
       .filter-items a {
         position: relative;
         display: block;
@@ -158,7 +143,7 @@
     </style>
   </head>
 
-  <body>
+  <body class="font-poppins">
     <div class="page-wrapper">
       <header class="header">
         <div
@@ -453,8 +438,8 @@
                     <h4 class="canvas-title">wishlist</h4>
                     <a
                       href="#"
-                      class="btn btn-dark btn-link btn-icon-right btn-close"
-                      >close<i class="d-icon-arrow-right"></i
+                      class="btn btn-dark btn-link btn-icon-right btn-close "
+                      >close<i class="fas fa-arrow-right"></i
                       ><span class="sr-only">wishlist</span></a
                     >
                   </div>
@@ -562,7 +547,7 @@
                     <a
                       href="#"
                       class="btn btn-dark btn-link btn-icon-right btn-close"
-                      >close<i class="d-icon-arrow-right"></i
+                      >close<i class="fas fa-arrow-right"></i
                       ><span class="sr-only">Cart</span></a
                     >
                   </div>
@@ -828,7 +813,7 @@
                               <span class="text-uppercase">Up to</span>70% Off
                             </h3>
                             <a href="#" class="btn btn-link btn-underline"
-                              >shop now<i class="d-icon-arrow-right"></i
+                              >shop now<i class="fas fa-arrow-right"></i
                             ></a>
                           </div>
                         </div>
@@ -1389,7 +1374,8 @@
                             </div>
                             <button
                               type="submit"
-                              class="inline-block px-[2em] py-[0.86em] rounded-[2px] text-white bg-dark border-[#e4eaec] outline-none font-bold text-[1.4rem] leading-[1.2] uppercase text-center tracking-[0] transition-colors transition-shadow transition-[border-color,background-color] duration-300 cursor-pointer border-none"
+                              class="inline-block px-[2em] py-[0.86em] rounded-[2px] text-white bg-dark hover:bg-secondary border-[#e4eaec] outline-none font-bold text-[1.4rem] leading-[1.2] uppercase text-center tracking-[0] transition-[background-color,border-color,box-shadow] duration-300 cursor-pointer border-none
+                              "
                             >
                               Filter
                             </button>
@@ -1510,7 +1496,7 @@
                       >
                       <select
                         name="orderby"
-                        class="max-w-[15rem] pl-[1.4rem] mr-[1.8rem] px-10 py-[0.85rem] border border-[#e3e3e3] font-normal text-body text-[12px] form-control"
+                        class="max-w-[15rem] pl-[1.4rem] mr-[1.8rem] min-h-9 px-10 py-[0.85rem] border border-[#e3e3e3] font-normal text-body text-[12px] form-control"
                       >
                         <option value="default">Default</option>
                         <option value="popularity" selected="selected">
@@ -1535,7 +1521,7 @@
                       >
                       <select
                         name="count"
-                        class="px-2 py-[0.85rem] border border-[#e3e3e3] font-normal text-body text-[12px] md-0 md:mr-[1.8rem] form-control"
+                        class="px-2 py-[0.85rem] border min-h-9 !w-auto border-[#e3e3e3] font-normal text-body text-[12px] md-0 md:mr-[1.8rem] form-control"
                       >
                         <option value="12">12</option>
                         <option value="24">24</option>
@@ -1545,11 +1531,11 @@
                     <div class="hidden md:flex items-center flex-wrap">
                       <a
                         href="shop-list-mode.html"
-                        class="d-icon-mode-list btn-layout"
+                        class="fas fa-list btn-layout"
                       ></a>
                       <a
                         href="shop.html"
-                        class="d-icon-mode-grid btn-layout active"
+                        class="fas fa-bars btn-layout active"
                       ></a>
                     </div>
                   </div>
@@ -1588,14 +1574,14 @@
                             data-target="#addCartModal"
                             title="Add to cart"
                           >
-                            <i class="d-icon-bag"></i>
+                            <i class="fas fa-shopping-bag"></i>
                           </a>
                           <a
                             href="#"
                             class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-lightGray rounded-full bg-white text-light text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-wishlist"
                             title="Add to wishlist"
                           >
-                            <i class="d-icon-heart"></i>
+                            <i class="far fa-heart"></i>
                           </a>
                         </div>
 
@@ -1679,14 +1665,14 @@
                             data-target="#addCartModal"
                             title="Add to cart"
                           >
-                            <i class="d-icon-bag"></i>
+                            <i class="fas fa-shopping-bag"></i>
                           </a>
                           <a
                             href="#"
                             class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-lightGray rounded-full bg-white text-light text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-wishlist"
                             title="Add to wishlist"
                           >
-                            <i class="d-icon-heart"></i>
+                            <i class="far fa-heart"></i>
                           </a>
                         </div>
 
@@ -1780,14 +1766,14 @@
                             data-target="#addCartModal"
                             title="Add to cart"
                           >
-                            <i class="d-icon-bag"></i>
+                            <i class="fas fa-shopping-bag"></i>
                           </a>
                           <a
                             href="#"
                             class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-lightGray rounded-full bg-white text-light text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-wishlist"
                             title="Add to wishlist"
                           >
-                            <i class="d-icon-heart"></i>
+                            <i class="far fa-heart"></i>
                           </a>
                         </div>
 
@@ -1871,14 +1857,14 @@
                             data-target="#addCartModal"
                             title="Add to cart"
                           >
-                            <i class="d-icon-bag"></i>
+                            <i class="fas fa-shopping-bag"></i>
                           </a>
                           <a
                             href="#"
                             class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-lightGray rounded-full bg-white text-light text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-wishlist"
                             title="Add to wishlist"
                           >
-                            <i class="d-icon-heart"></i>
+                            <i class="far fa-heart"></i>
                           </a>
                         </div>
 
@@ -1963,14 +1949,14 @@
                             data-target="#addCartModal"
                             title="Add to cart"
                           >
-                            <i class="d-icon-bag"></i>
+                            <i class="fas fa-shopping-bag"></i>
                           </a>
                           <a
                             href="#"
                             class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-lightGray rounded-full bg-white text-light text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-wishlist"
                             title="Add to wishlist"
                           >
-                            <i class="d-icon-heart"></i>
+                            <i class="far fa-heart"></i>
                           </a>
                         </div>
 
@@ -2055,14 +2041,14 @@
                             data-target="#addCartModal"
                             title="Add to cart"
                           >
-                            <i class="d-icon-bag"></i>
+                            <i class="fas fa-shopping-bag"></i>
                           </a>
                           <a
                             href="#"
                             class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-lightGray rounded-full bg-white text-light text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-wishlist"
                             title="Add to wishlist"
                           >
-                            <i class="d-icon-heart"></i>
+                            <i class="far fa-heart"></i>
                           </a>
                         </div>
 
@@ -2147,14 +2133,14 @@
                             data-target="#addCartModal"
                             title="Add to cart"
                           >
-                            <i class="d-icon-bag"></i>
+                            <i class="fas fa-shopping-bag"></i>
                           </a>
                           <a
                             href="#"
                             class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-lightGray rounded-full bg-white text-light text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-wishlist"
                             title="Add to wishlist"
                           >
-                            <i class="d-icon-heart"></i>
+                            <i class="far fa-heart"></i>
                           </a>
                         </div>
 
@@ -2239,14 +2225,14 @@
                             data-target="#addCartModal"
                             title="Add to cart"
                           >
-                            <i class="d-icon-bag"></i>
+                            <i class="fas fa-shopping-bag"></i>
                           </a>
                           <a
                             href="#"
                             class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-lightGray rounded-full bg-white text-light text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-wishlist"
                             title="Add to wishlist"
                           >
-                            <i class="d-icon-heart"></i>
+                            <i class="far fa-heart"></i>
                           </a>
                         </div>
 
@@ -2331,14 +2317,14 @@
                             data-target="#addCartModal"
                             title="Add to cart"
                           >
-                            <i class="d-icon-bag"></i>
+                            <i class="fas fa-shopping-bag"></i>
                           </a>
                           <a
                             href="#"
                             class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-lightGray rounded-full bg-white text-light text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-wishlist"
                             title="Add to wishlist"
                           >
-                            <i class="d-icon-heart"></i>
+                            <i class="far fa-heart"></i>
                           </a>
                         </div>
 
@@ -2423,14 +2409,14 @@
                             data-target="#addCartModal"
                             title="Add to cart"
                           >
-                            <i class="d-icon-bag"></i>
+                            <i class="fas fa-shopping-bag"></i>
                           </a>
                           <a
                             href="#"
                             class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-lightGray rounded-full bg-white text-light text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-wishlist"
                             title="Add to wishlist"
                           >
-                            <i class="d-icon-heart"></i>
+                            <i class="far fa-heart"></i>
                           </a>
                         </div>
 
@@ -2515,14 +2501,14 @@
                             data-target="#addCartModal"
                             title="Add to cart"
                           >
-                            <i class="d-icon-bag"></i>
+                            <i class="fas fa-shopping-bag"></i>
                           </a>
                           <a
                             href="#"
                             class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-lightGray rounded-full bg-white text-light text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-wishlist"
                             title="Add to wishlist"
                           >
-                            <i class="d-icon-heart"></i>
+                            <i class="far fa-heart"></i>
                           </a>
                         </div>
 
@@ -2607,14 +2593,14 @@
                             data-target="#addCartModal"
                             title="Add to cart"
                           >
-                            <i class="d-icon-bag"></i>
+                            <i class="fas fa-shopping-bag"></i>
                           </a>
                           <a
                             href="#"
                             class="flex items-center justify-center w-[3.6rem] h-[3.6rem] mb-2 border border-lightGray rounded-full bg-white text-light text-[1.6rem] font-bold transition-colors transition-[border-color] duration-300 btn-wishlist"
                             title="Add to wishlist"
                           >
-                            <i class="d-icon-heart"></i>
+                            <i class="far fa-heart"></i>
                           </a>
                         </div>
 
@@ -2688,13 +2674,13 @@
                   >
                     <li class="disabled">
                       <a
-                        class="min-w-[8rem] p-[1.2rem] text-[#aaa] hover:border-black hover:text-[#aaa] border border-transparent transition-colors duration-300"
+                        class="min-w-[8rem] p-[1.2rem] text-[#aaa] border border-transparent transition-colors duration-300 flex justify-center items-center gap-[6px] "
                         href="#"
                         aria-label="Previous"
                         tabindex="-1"
                         aria-disabled="true"
                       >
-                        <i class="d-icon-arrow-left"></i>Prev
+                        <i class="fas fa-arrow-left"></i>Prev
                       </a>
                     </li>
                     <li class="active" aria-current="page">
@@ -2727,11 +2713,11 @@
                     </li>
                     <li>
                       <a
-                        class="min-w-[8rem] p-[1.2rem] hover:border-[#dadada] hover:text-dark border border-transparent transition-colors duration-300"
+                        class="min-w-[8rem] p-[1.2rem] hover:border-[#dadada] hover:text-dark border border-transparent transition-colors duration-300 flex justify-center items-center gap-[6px] "
                         href="#"
                         aria-label="Next"
                       >
-                        Next<i class="d-icon-arrow-right"></i>
+                        Next<i class="fas fa-arrow-right"></i>
                       </a>
                     </li>
                   </ul>
@@ -3069,7 +3055,7 @@
             class="flex flex-col items-center my-6 hover:text-gray-800"
           >
             <i
-              class="d-icon-heart text-[2.3rem] leading-none w-[2.3rem] h-[2.4rem] text-center transition-transform duration-300 hover:-translate-y-[5px]"
+              class="far fa-heart text-[2.3rem] leading-none w-[2.3rem] h-[2.4rem] text-center transition-transform duration-300 hover:-translate-y-[5px]"
             ></i>
             <span class="mt-2 text-sm tracking-wider uppercase">Wishlist</span>
           </a>

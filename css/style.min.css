@@ -6299,7 +6299,7 @@ textarea {
     font-weight: 900;
     font-size: 9px;
     right: 8px;
-    top: 50%;
+    top: 34%;
     transform: translateY(-50%);
 }
 
@@ -14266,13 +14266,6 @@ aside+div .product-single .product-details {
 .shop-sidebar .left-sidebar-toggle,
 .shop-sidebar .sidebar-toggle-btn {
     padding: 0.8em 1.04em;
-}
-
-.shop-sidebar .filter-actions {
-    display: flex;
-    align-items: center;
-    padding-right: 0.6rem;
-    margin-bottom: 2rem;
 }
 
 .btn-icon-right i {
